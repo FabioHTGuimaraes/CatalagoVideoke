@@ -1,0 +1,176 @@
+/* Importa a fonte Roboto Mono do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    font-family: "Roboto Mono", sans-serif;
+    line-height: 1.6;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    text-align: center;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background-color: #ffffff; 
+    color: #000000;
+    margin: 2%;
+}
+
+nav {
+    align-items: center;
+    font-size: 135%;
+}
+
+nav a { 
+    color: #f2d037;
+    text-decoration: none; 
+    transition: color 0.3s ease;
+} 
+
+nav a:hover { 
+    text-decoration: none; 
+    color: #b1d330;
+}
+
+#img-centro {
+    text-align: center;
+    width: 20%;
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+/* Container de pesquisa */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+/* Campo de pesquisa */
+.search-container input[type="text"] {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão de pesquisa */
+button {
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f2d037;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #b1d330;
+}
+
+button:active {
+    background-color: #b1d330;
+}
+
+/* Tabela de músicas */
+.musicList {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.musicList th, .musicList td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.musicList th {
+    background-color: #6e6e6e;
+    color: white;
+    font-weight: bold;
+}
+
+.musicList tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Adiciona estilo para o rodapé do projeto */
+
+footer {
+    color: #f2d037;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3%;  
+    bottom: 0;        
+    left: 0;          
+    width: 100%;      
+    z-index: 1000;    
+    text-align: center;
+}
+
+footer p {
+    margin-right: 0.5%;
+}
+
+#clique-footer:hover{
+    color: #b1d330;
+    cursor: pointer;
+}  
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .search-container input[type="text"],
+    button {
+        width: 100%;
+        max-width: 100%;
+        font-size: 18px;
+    }
+
+    .musicList th, .musicList td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container {
+        padding: 10px;
+    }
+
+    .search-container input[type="text"] {
+        padding: 15px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .musicList {
+        font-size: 12px;
+    }
+
+    .musicList th, .musicList td {
+        padding: 5px;
+    }
+}

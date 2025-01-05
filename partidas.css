@@ -1,0 +1,274 @@
+/* Importa a fonte Roboto Mono do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    font-family: "Roboto Mono", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    text-align: center;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background-color: #ffffff; 
+    color: #000000;
+    margin: 2%;
+}
+
+nav {
+    align-items: center;
+    font-size: 135%;
+}
+
+nav a { 
+    color: #f2d037;
+    text-decoration: none; 
+    transition: color 0.3s ease;
+} 
+
+nav a:hover { 
+    text-decoration: none; 
+    color: #b1d330;
+}
+
+#img-centro {
+    text-align: center;
+    width: 20%;
+}
+
+/* Main */
+.container {
+    width: 50%;
+    margin: 5% auto;
+    text-align: center;
+    padding: 2%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-container {
+    text-align: center;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.input-container input {
+    padding: 8px;
+    font-size: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 38%;
+ }
+
+/* Estilo para os botões lado a lado */
+.button-container {
+    margin-top: 1%;
+    text-align: center;
+}
+
+button {
+    padding: 8px;
+    font-size: 100%;
+    background-color: #f2d037;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 40%;
+}
+
+button:hover {
+    background-color: #b1d330;
+}
+  
+/* Estilo para a lista de jogadores */
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 120%;
+}
+
+li {
+    background-color: #ffffff;
+    padding: 2%;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+
+/* Centraliza o nome dos jogadores e a pontuação */
+#listaJogadores {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 20%;
+}
+  
+#listaJogadores li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+strong {
+    display: block;
+    font-size: 50%;
+    color: #000000;
+}
+
+.pontuacao {
+    font-size: 50%;
+    color: #000000;
+}
+
+.pontuacao span {
+    display: block;
+    margin-top: 5px;
+}
+
+.notas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.notas-container input {
+    width: 100%;
+}
+
+#notaJogadorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para cada rodada */
+.rodada {
+    margin-top: 5%;
+}
+  
+.notas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+#notaJogadorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#limparpartidas1 {
+    padding: 8px;
+    font-size: 100%;
+    background-color: #f2d037;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 15%;
+}
+
+#limparpartidas1:hover {
+    background-color: #b1d330;
+}
+
+/* Adiciona estilo para o rodapé do projeto */
+
+footer {
+    color: #f2d037;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3%;  
+    bottom: 0;        
+    left: 0;          
+    width: 100%;      
+    z-index: 1000;    
+    text-align: center;
+}
+
+footer p {
+    margin-right: 0.5%;
+}
+
+#clique-footer:hover{
+    color: #b1d330;
+    cursor: pointer;
+}   
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .input-container input,
+    button {
+        width: 100%;
+        max-width: 100%;
+        font-size: 18px;
+    }
+
+    #img-centro {
+        width: 30%;
+    }
+
+    #listaJogadores li {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .input-container input {
+        padding: 3%;
+        font-size: 80%;
+        width: 80%;
+    }
+
+    .input-container button {
+        width: 80%;
+    }
+
+    #limparpartidas1 {
+        width: 30%;
+    }
+
+    #img-centro {
+        width: 50%;
+        margin-top: 3%;
+    }
+
+    #listaJogadores li {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 60%;
+        margin: 3%;
+    }
+}

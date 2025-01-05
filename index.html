@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Inclui o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Define o ícone da página -->
+    <link rel="icon" href="img/videoke-logo--removebg-preview.png">
+
+    <!-- Inclui o arquivo de script JavaScript -->
+    <script src="script.js"></script>
+
+    <!--Links do bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--Nome da pagina-->
+    <title>CATÁLAGO DE MÚSICAS</title>
+</head>
+
+<body>
+    
+    <!-- Cabeçalho da página -->
+    <header>
+
+        <img src="img/logo-ivideoke-removebg-preview.png" id="img-centro">
+
+        <nav id="nav-centro"> 
+            <a href="index.html">Início</a> 
+            <a href="partidas.html">Rodadas</a> 
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Campo de pesquisa -->
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Pesquisar música, cantor ou código...">
+            <button onclick="filterTable()">Pesquisar</button>
+        </div>
+
+        <!-- Tabela de músicas -->
+        <table class="musicList" id="musicList">
+        
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome da Música</th>
+                    <th>Cantor/Compositor</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr> <td>3551</td> <td>60 DIAS APAIXONADO</td> <td>CHITÃOZINHO E XORORÓ</td> </tr> 
+                <tr> <td>3001</td> <td>A BANDA DO ZÉ PRETINHO</td> <td>JORGE BEM</td> </tr> 
+                <tr> <td>9371</td> <td>A CANÇÃO DO SENHOR DA GUERRA</td> <td>LEGIÃO URBANA</td> </tr> 
+                <tr> <td>1401</td> <td>A CARTA</td> <td>EDUARDO COSTA</td> </tr> 
+                <tr> <td>1371</td> <td>A CASA CAIU</td> <td>FERNANDO E SOROCABA</td> </tr> 
+                <tr> <td>9372</td> <td>A CIGANINHA</td> <td>CARLOS ALEXANDRE</td> </tr> 
+                <tr> <td>3552</td> <td>A DANÇA DA CORDINHA</td> <td>É O TCHAN</td> </tr> 
+                <tr> <td>3501</td> <td>A DANÇA DO BUMBUM</td> <td>É O TCHAN</td> </tr> 
+                <tr> <td>1402</td> <td>A DEUSA DOS ORIXÁS</td> <td>CLARA NUNES</td> </tr> 
+                <tr> <td>1961</td> <td>A DOIDA</td> <td>SEU JORGE</td> </tr> 
+                <tr> <td>1441</td> <td>A DONA DO PRIMEIRO ANDAR</td> <td>OS ORIGINAIS DO SAMBA</td> </tr> 
+                <tr> <td>3502</td> <td>A FORÇA DO AMOR</td> <td>ROUPA NOVA</td> </tr> 
+                <tr> <td>3002</td> <td>A FÓRMULA DO AMOR</td> <td>KID ABELHA</td> </tr> 
+                <tr> <td>3301</td> <td>A FRANCESA</td> <td>MARINA LIMA</td> </tr> 
+                <tr> <td>9373</td> <td>A GALERA</td> <td>IVETE SANGALO</td> </tr> 
+                <tr> <td>1403</td> <td>A LOUCA</td> <td>FERNANDO & SOROCABA</td> </tr> 
+                <tr> <td>9374</td> <td>A MENINA DO SUBÚRBIO</td> <td>FERNANDO MENDES</td> </tr> 
+                <tr> <td>3503</td> <td>A NOITE DO MEU BEM</td> <td>DOLORES DURAN</td> </tr> 
+                <tr> <td>9375</td> <td>À NOITE SONHEI CONTIGO</td> <td>PAULA TOLLER</td> </tr> 
+                <tr> <td>3401</td> <td>A PERIGO</td> <td>ENGENHEIROS DO HAWAII</td> </tr> 
+                <tr> <td>3003</td> <td>A PRAÇA</td> <td>RONNIE VON</td> </tr> 
+                <tr> <td>9376</td> <td>A PRIMEIRA LETRA</td> <td>DANIEL</td> </tr> 
+                <tr> <td>3451</td> <td>A PRIMEIRA VISTA</td> <td>CHICO CÉSAR</td> </tr> 
+                <tr> <td>9377</td> <td>A PRINCESA E O PLEBEU</td> <td>JORGE BENJOR</td> </tr> 
+                <tr> <td>3351</td> <td>A PROMESSA</td> <td>ENGENHEIROS DO HAWAII</td> </tr> 
+                <tr> <td>3004</td> <td>A SAUDADE DÓI</td> <td>ROYCE DO CAVACO</td> </tr> 
+                <tr> <td>1442</td> <td>Á SOMBRA DE UM VULCÃO</td> <td>FAGNER</td> </tr> 
+                <tr> <td>9378</td> <td>Á SOMBRA DO TEU SORRISO</td> <td>ALCIONE/MOACYR FRANCO</td> </tr> 
+                <tr> <td>3352</td> <td>A SOMBRA DA MALDADE</td> <td>CIDADE NEGRA</td> </tr> 
+                <tr> <td>3005</td> <td>A VIAGEM</td> <td>ROUPA NOVA</td> </tr> 
+                <tr> <td>3452</td> <td>A VIDA NÃO PRESTA</td> <td>LEO JAIME</td> </tr> 
+                <tr> <td>3453</td> <td>A VOLTA DO BOÊMIO</td> <td>NELSON GONÇALVES</td> </tr> 
+                <tr> <td>9379</td> <td>ABAFA O CASO</td> <td>BRUNO E MARRONE</td> </tr> 
+                <tr> <td>1321</td> <td>ABAIXO A CUECA</td> <td>ZÉ RODRIX</td> </tr> 
+                <tr> <td>1372</td> <td>ACALANTO</td> <td>DORIVAL CAYMMI</td> </tr> 
+                <tr> <td>9380</td> <td>ACENDA O FAROL</td> <td>TIM MAIA</td> </tr> 
+                <tr> <td>9381</td> <td>ADELAIDE</td> <td>INIMIGOS DO REI</td> </tr> 
+                <tr> <td>1351</td> <td>ADEUS Á DOR</td> <td>EDUARDO COSTA</td> </tr> 
+                <tr> <td>3504</td> <td>ADIVINHE O QUE?</td> <td>LULU SANTOS</td> </tr> 
+                <tr> <td>3505</td> <td>ADMIRÁVEL GADO NOVO</td> <td>ZE RAMALHO</td> </tr> 
+                <tr> <td>4021</td> <td>ADORO AMAR VOCÊ</td> <td>DANIEL</td> </tr> 
+                <tr> <td>4022</td> <td>AGENDA RABISCADA</td> <td>CLEITON E CAMARGO</td> </tr> 
+                <tr> <td>9382</td> <td>AGITO E USO</td> <td>FRENETICAS</td> </tr> 
+                <tr> <td>1443</td> <td>AGORA MEXE</td> <td>HARMONIA DO SAMBA</td> </tr> 
+                <tr> <td>1444</td> <td>AGUARDENTE</td> <td>BIAFRA</td> </tr> 
+                <tr> <td>3006</td> <td>ÁGUAS DE MARÇO</td> <td>ELIS REGINA</td> </tr> 
+                <tr> <td>3506</td> <td>ÁGUAS PASSADAS</td> <td>FAFA DE BELEM</td>
+                <tr> <td>3007</td> <td>AI QUE SAUDADE DA AMÉLIA</td> <td>ATAULFO ALVES</td> </tr> 
+                <tr> <td>1331</td> <td>AI MARIA</td> <td>CHITÃOZINHO E XORORÓ</td> </tr> 
+                <tr> <td>1861</td> <td>AI SE EU TE PEGO</td> <td>MICHEL TELO</td> </tr> 
+                <tr> <td>3008</td> <td>AINDA É CEDO</td> <td>LEGIÃO URBANA</td> </tr> 
+                <tr> <td>3009</td> <td>AINDA LEMBRO</td> <td>MARISA MONTE</td> </tr> 
+                <tr> <td>3402</td> <td>ALCOHOL</td> <td>JORGE BENJOR</td> </tr> 
+                <tr> <td>3010</td> <td>ALGUÉM COMO TU</td> <td>FAGNER</td> </tr> 
+                <tr> <td>9383</td> <td>ÁLIBI</td> <td>DJAVAN</td> </tr> 
+                <tr> <td>3011</td> <td>ALMA GÊMEA</td> <td>FABIO JR</td> </tr> 
+                <tr> <td>9384</td> <td>ALTOS E BAIXOS</td> <td>ELIS REGINA</td> </tr> 
+                <tr> <td>3012</td> <td>AMADA AMANTES</td> <td>ROBERTO CARLOS</td> </tr> 
+                <tr> <td>3507</td> <td>AMANTE PROFISSIONAL</td> <td>ERVA DOCE</td> </tr> 
+                <tr> <td>3553</td> <td>AMAR É...</td> <td>ROUPA NOVA</td> </tr> 
+                <tr> <td>3353</td> <td>AMARRADOS</td> <td>FABIO JR</td> </tr> 
+                <tr> <td>1352</td> <td>AMIGA</td> <td>DANIEL</td> </tr> 
+                <tr> <td>3403</td> <td>AMIGO</td> <td>ROBERTO CARLOS</td> </tr> 
+                <tr> <td>9385</td> <td>AMIGO DO SOL AMIGO DA LUA</td> <td>BENITO DI PAULA</td> </tr>
+                <tr> <td>3454</td> <td>AMIGOS DO PEITO</td> <td>BALÃO MÁGICO</td> </tr>
+                <tr> <td>3013</td> <td>AMOR CALIENTE</td> <td>NETINHO</td> </tr> 
+                <tr> <td>1373</td> <td>AMOR COVARDE</td> <td>JORGE E MATEUS</td> </tr> 
+                <tr> <td>9386</td> <td>AMOR DE BALADA</td> <td>BRUNO E MARRONE</td> </tr> 
+                <tr> <td>9387</td> <td>AMOR DE PING PONG</td> <td>BRUNO E MARRONE</td> </tr> 
+                <tr> <td>3404</td> <td>AMOR DEMAIS</td> <td>GIAN E GIOVANI</td> </tr> 
+                <tr> <td>9388</td> <td>AMOR PIREI</td> <td>BANDA VOA DOIS</td> </tr> 
+                <tr> <td>9389</td> <td>AMOR SEM MEDO</td> <td>FRANCIS HIME</td> </tr> 
+                <tr> <td>9390</td> <td>AMORA</td> <td>RENATO TEXEIRA</td> </tr> 
+                <tr> <td>3302</td> <td>ANDANÇA</td> <td>ELBA RAMALHO</td> </tr> 
+                <tr> <td>9391</td> <td>ANJO</td> <td>BANDA EVA</td> </tr> 
+                <tr> <td>3405</td> <td>ANJO</td> <td>ROUPA NOVA</td> </tr> 
+                <tr> <td>3014</td> <td>ANOS DOURADOS</td> <td>MARIA BETHÂNIA</td> </tr> 
+                <tr> <td>1374</td> <td>AO VIVO E EM CORES</td> <td>VICTOR E LEO</td> </tr> 
+                <tr> <td>1967</td> <td>APAIXONADOS PELA LUA</td> <td>PAULA FERNANDES</td> </tr> 
+                <tr> <td>3015</td> <td>APENAS UM RAPAZ LATINO AMERICANO</td> <td>BELCHIOR</td> </tr> 
+                <tr> <td>3455</td> <td>APESAR DE VOCÊ</td> <td>CHICO BUARQUE</td> </tr> 
+                <tr> <td>9392</td> <td>APOSTAS E CERTEZAS</td> <td>CPM 22</td> </tr> 
+                <tr> <td>3406</td> <td>AQUARELA</td> <td>TOQUINHO</td> </tr> 
+                <tr> <td>3016</td> <td>AQUARELA DO BRASIL</td> <td>GAL COSTA</td> </tr> 
+                <tr> <td>9393</td> <td>AQUI</td> <td>ANA CAROLINA</td> </tr> 
+                <tr> <td>1445</td> <td>AQUI A TRISTEZA PULA DE ALEGRIA</td> <td>FERNANDO E SOROCABA</td> </tr> 
+                <tr> <td>9394</td> <td>AQUI NÃO</td> <td>CÉSAR MENOTTI E FABIANO</td> </tr> 
+                <tr> <td>3017</td> <td>ARA KETU BOM DEMAIS</td> <td>ARA KETU</td> </tr> 
+                <tr> <td>1404</td> <td>ARDENTE</td> <td>NEY MATOGROSSO</td> </tr> 
+                <tr> <td>9395</td> <td>AS CANÇÕES QUE EU FIZ</td> <td>JAMMIL E UMA NOITES</td> </tr> 
+                <tr> <td>9396</td> <td>AS FORÇAS DA NATUREZA</td> <td>CLARA NUNES</td> </tr> 
+                <tr> <td>1405</td> <td>AS MÁSCARAS</td> <td>CLAUDIA LEITTE</td> </tr> 
+                <tr> <td>3018</td> <td>AS ROSAS NÃO FALAM</td> <td>CARTOLA</td> </tr> 
+                <tr> <td>3019</td> <td>ASA BRANCA</td> <td>LUIZ GONZAGA</td> </tr> 
+                <tr> <td>3020</td> <td>ASA MORENA</td> <td>ZIZI POSSI</td> </tr> 
+                <tr> <td>3021</td> <td>ASSIM CAMINHA A HUMANIDADE</td> <td>LULU SANTOS</td> </tr> 
+                <tr> <td>2783</td> <td>ASSIM VOCÊ MATA O PAPAI</td> <td>SORRISO MAROTO</td> </tr> 
+                <tr> <td>3354</td> <td>ATÉ DE MANHÃ</td> <td>GRUPO TÁ NA MENTE</td> </tr> 
+                <tr> <td>3303</td> <td>ATÉ VOCÊ VOLTAR</td> <td>CHITÃOZINHO E XORORÓ</td> </tr> 
+                <tr> <td>9397</td> <td>ATIRASTE UMA PEDRA</td> <td>MARIA BETHÂNIA</td> </tr> 
+                <tr> <td>3022</td> <td>ATIRE A PRIMEIRA PEDRA</td> <td>ATAULFO ALVES</td> </tr> 
+                <tr> <td>3508</td> <td>AVISO AOS NAVEGANTES</td> <td>LULU SANTOS</td> </tr> 
+                <tr> <td>1322</td> <td>BABILÔNIA ME CHAMA</td> <td>ARMANDINHO</td> </tr> 
+                <tr> <td>3023</td> <td>BAIANIDADE NAGÔ</td> <td>BAMDAMEL</td> </tr> 
+                <tr> <td>3509</td> <td>BAILA COMIGO</td> <td>RITA LEE</td> </tr> 
+                <tr> <td>3510</td> <td>BAILÃO DE PEÃO</td> <td>CHITÃOZINHO E XORORÓ</td> </tr> 
+                <tr> <td>9398</td> <td>BAIXA ESSA GUARDA</td> <td>GRUPO REVELAÇÃO</td> </tr> 
+                <tr> <td>3024</td> <td>BALANCÊ</td> <td>GAL COSTA</td> </tr> 
+                <tr> <td>3554</td> <td>BALANÇA PENA</td> <td>MARISA MONTE</td> </tr> 
+                <tr> <td>9399</td> <td>BALANÇO LEGAL</td> <td>NETINHO</td> </tr> 
+                <tr> <td>3407</td> <td>BALANÇO TRILEGAL</td> <td>BETO BARBOSA</td> </tr> 
+                <tr> <td>3555</td> <td>BANHO DE CHEIRO</td> <td>ELBA RAMALHO</td> </tr> 
+                <tr> <td>3025</td> <td>BANHO DE ESPUMA</td> <td>RITA LEE</td> </tr> 
+                <tr> <td>3026</td> <td>BANHO DE LUA</td> <td>CELLY CAMPELLO</td> </tr> 
+                <tr> <td>9400</td> <td>BAR DO TOBAS</td> <td>DJ MALUCO</td> </tr> 
+                <tr> <td>3027</td> <td>BATE CORAÇÃO</td> <td>ELBA RAMALHO</td> </tr> 
+                <tr> <td>3028</td> <td>BATEU SAUDADE</td> <td>BANDA MEL</td> </tr> 
+                <tr> <td>3355</td> <td>BATUQUE</td> <td>NEY MATOGROSSO</td> </tr> 
+                <tr> <td>3408</td> <td>BEAT ACELERADO</td> <td>METRÔ</td> </tr> 
+                <tr> <td>9622</td> <td>BEBER, CAIR E LEVANTAR</td> <td>AVIÕES DO FORRO</td> </tr> 
+                <tr> <td>1353</td> <td>BEBO E CHORO</td> <td>CALCINHA PRETA</td> </tr> 
+                <tr> <td>1446</td> <td>BEBO E DOU TRABALHO</td> <td>JOÃO NETO E FREDERICO</td> </tr> 
+                <tr> <td>3456</td> <td>BEIJA FLOR</td> <td>TIMBALADA</td> </tr> 
+                <tr> <td>9401</td> <td>BEIJAR NA BOCA</td> <td>COGUMELO PLUTÃO/CLAUDIA LEITTE</td> </tr> 
+                <tr> <td>3457</td> <td>BEIJINHO NA BOCA</td>  <td>BETO BARBOSA</td> </tr>	
+                <tr> <td>3029</td> <td>BEIJO GELADINHO</td>  <td>NEGRITUDE JUNIOR</td> </tr>	
+                <tr> <td>3030</td> <td>BEM QUE SE QUIS</td>  <td>MARISA MONTE/EXALTASAMBA</td> </tr>	
+                <tr> <td>1406</td> <td>BEM VINDA</td>  <td>JEITO MOLEQUE</td> </tr>	
+                <tr> <td>3031</td> <td>BERIMBOLANDO O PÁ-DE-DÊ</td>  <td>MARIANE</td> </tr>	
+                <tr> <td>9402</td> <td>BERRANDO QUE NEM BOI</td>  <td>RICK E RENNER</td> </tr>	
+                <tr> <td>3458</td> <td>BESAME</td>  <td>LEILA PINHEIRO</td> </tr>	
+                <tr> <td>3511</td> <td>BETE BALANÇO</td>  <td>BARÃO VERMELHO</td> </tr>	
+                <tr> <td>9403</td> <td>BILU TETÉIA</td>  <td>MAURO CELSO</td> </tr>	
+                <tr> <td>3032</td> <td>BIQUINI DE BOLINHA AMARELINHO</td>  <td>BLITZ</td> </tr>	
+                <tr> <td>1354</td> <td>BLÁ BLÁ BLÁ</td>  <td>AVIÕES DO FORRO</td> </tr>	
+                <tr> <td>1332</td> <td>BOA SORTE</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>3304</td> <td>BOIS DON´T CRY</td>  <td>MAMONAS ASSASSINAS</td> </tr>	
+                <tr> <td>3305</td> <td>BOLA PRA FRENTE</td>  <td>SUPER FELIZ</td> </tr>	
+                <tr> <td>3306</td> <td>BOM BOCADO</td>  <td>ART POPULAR</td> </tr>	
+                <tr> <td>9404</td> <td>BONDE DO FUNK AXÉ</td>  <td>MAIRA CHARKEN</td> </tr>	
+                <tr> <td>9623</td> <td>BORBOLETAS</td>  <td>VICTOR E LEO</td> </tr>	
+                <tr> <td>3307</td> <td>BORBULHAS DE AMOR</td>  <td>FAGNER</td> </tr>	
+                <tr> <td>3033</td> <td>BRASIL PANDEIRO</td>  <td>MORAES MOREIRA</td> </tr>	
+                <tr> <td>3034</td> <td>BRINCAR DE ÍNDIO</td>  <td>XUXA</td> </tr>	
+                <tr> <td>3035</td> <td>BRINCAR DE SER FELIZ</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>3459</td> <td>BRINCAR DE VIVER</td>  <td>MARIA BETHÂNIA</td> </tr>	
+                <tr> <td>3308</td> <td>BYE BYE TRISTEZA</td>  <td>SANDRA DE SÁ</td> </tr>	
+                <tr> <td>3460</td> <td>CABECINHA NO OMBRO</td>  <td>ALMIR SATER</td> </tr>	
+                <tr> <td>1375</td> <td>CABÔ MEU PAI</td>  <td>BETH CARVALHO</td> </tr>	
+                <tr> <td>9405</td> <td>CACHO DE UVA</td>  <td>RONNIE VON</td> </tr>	
+                <tr> <td>3036</td> <td>CAÇA E CAÇADOR</td>  <td>FABIO JR</td> </tr>	
+                <tr> <td>3037</td> <td>CAÇAMBA</td>  <td>MOLEJO</td> </tr>	
+                <tr> <td>3356</td> <td>CADA UM NO SEU CADA UM</td>  <td>ZECA PAGODINHO</td> </tr>	
+                <tr> <td>3038</td> <td>CADÊ VOCÊ</td>  <td>LEANDRO E LEONARDO</td> </tr>	
+                <tr> <td>3309</td> <td>CAFÉ DA MANHÃ</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>3310</td> <td>CAIU O PALCO</td>  <td>JOÃO ROBERTO E ROBERTINHO</td> </tr>	
+                <tr> <td>2844</td> <td>CAMARO AMARELO</td>  <td>MUNHOZ E MARIANO</td> </tr>	
+                <tr> <td>3039</td> <td>CANÇÃO DA AMÉRICA</td>  <td>MILTON NASCIMENTO</td> </tr>	
+                <tr> <td>1355</td> <td>CANÇÕES DO REI</td>  <td>MAX VIANNA</td> </tr>	
+                <tr> <td>1356</td> <td>CANSEI DE SER PALHAÇO</td>  <td>EDUARDO COSTA</td> </tr>	
+                <tr> <td>3409</td> <td>CANTA, CANTA MINHA GENTE</td>  <td>MARTINHO DA VILA</td> </tr>	
+                <tr> <td>9406</td> <td>CANTA BRASIL</td>  <td>GAL COSTA</td> </tr>	
+                <tr> <td>9407</td> <td>CANTO DE OXUM</td>  <td>MARIA BETHÂNIA</td> </tr>	
+                <tr> <td>9408</td> <td>CAPIM NOVO</td>  <td>LUIZ GONZAGA</td> </tr>	
+                <tr> <td>3040</td> <td>CAPRICHO DOS DEUSES</td>  <td>NETINHO</td> </tr>	
+                <tr> <td>1376</td> <td>CARA A CARA</td>  <td>ANTÔNIO MARCOS</td> </tr>	
+                <tr> <td>9409</td> <td>CARANGUEJO</td>  <td>BABADO NOVO</td> </tr>	
+                <tr> <td>9410</td> <td>CARINHOS</td>  <td>TIM MAIA</td> </tr>	
+                <tr> <td>1377</td> <td>CAROLINA CAROL BELA</td>  <td>JORGE BENJOR</td> </tr>	
+                <tr> <td>3461</td> <td>CAROLINE</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>6090</td> <td>CAI A NOITE</td>  <td>CAPITAL INICIAL</td> </tr>	
+                <tr> <td>3462</td> <td>CASA</td>  <td>LULU SANTOS</td> </tr>	
+                <tr> <td>3410</td> <td>CASA SEPARA</td>  <td>LEANDRO E LEONARDO</td> </tr>	
+                <tr> <td>3041</td> <td>CASO SÉRIO</td>  <td>RITA LEE</td> </tr>	
+                <tr> <td>9411</td> <td>CASO VOCÊ CASE</td>  <td>MARILIA BARBOSA</td> </tr>	
+                <tr> <td>9412</td> <td>CASTELO DE AREIA</td>  <td>BRUNO E MARRONE</td> </tr>	
+                <tr> <td>1407</td> <td>CATAVENTO E GIRASSOL</td>  <td>LEILA PINHEIRO</td> </tr>	
+                <tr> <td>3042</td> <td>CATEDRAL</td>  <td>ZÉLIA DUNCAN</td> </tr>	
+                <tr> <td>3043</td> <td>CAVALEIROS DE ZODÍACO</td>  <td>LARISSA E WILLIAM</td> </tr>	
+                <tr> <td>3556</td> <td>CAVALO PRETO</td>  <td>SERGIO REIS</td> </tr>	
+                <tr> <td>1408</td> <td>CEGO, SURDO E MUDO</td>  <td>MARIA CECILIA E RODOLFO</td> </tr>	
+                <tr> <td>1357</td> <td>CENA DE UM FILME</td>  <td>EDUARDO COSTA</td> </tr>	
+                <tr> <td>9413</td> <td>CÉU COR DE ROSA</td>  <td>SIDNEY MAGAL</td> </tr>	
+                <tr> <td>9414</td> <td>CHAMA</td>  <td>NILA BRANCO</td> </tr>	
+                <tr> <td>1447</td> <td>CHAMEGO BOM</td>  <td>BRUNO E MARRONE</td> </tr>	
+                <tr> <td>9415</td> <td>CHEGA AÍ</td>  <td>LUCYNHA CINTRA</td> </tr>	
+                <tr> <td>3044</td> <td>CHEGOU A HORA DA FOGUEIRA</td>  <td>MUSICA JUNINA</td> </tr>	
+                <tr> <td>3045</td> <td>CHEIA DE CHARME</td>  <td>GUILHERME ARANTES</td> </tr>	
+                <tr> <td>3046</td> <td>CHEIA DE MANIAS</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>9416</td> <td>CHEIRO DE AMOR</td>  <td>MARIA BETHÂNIA</td> </tr>	
+                <tr> <td>3557</td> <td>CHICO MINEIRO</td>  <td>SERGIO REIS</td> </tr>	
+                <tr> <td>3047</td> <td>CHOPIS CENTER</td>  <td>MAMONAS ASSASSINAS</td> </tr>	
+                <tr> <td>1126</td> <td>CHORA, ME LIGA</td>  <td>JOÃO BOSCO E VINICIUS</td> </tr>	
+                <tr> <td>3311</td> <td>CHORA TUA TRISTEZA</td>  <td>CAETANO VELOSO</td> </tr>	
+                <tr> <td>6899</td> <td>CHORAM AS ROSAS</td>  <td>BRUNO E MARRONE</td> </tr>	
+                <tr> <td>3048</td> <td>CHOVE CHUVA</td>  <td>JORGE BENJOR</td> </tr>	
+                <tr> <td>9643</td> <td>CHUPA QUE É DE UVA</td>  <td>AVIÕES DO FORRO</td> </tr>	
+                <tr> <td>3357</td> <td>CHUVA DE PRATA</td>  <td>ROUPA NOVA</td> </tr>	
+                <tr> <td>9417</td> <td>CHUVA DE VENTO</td>  <td>AMADO BATISTA</td> </tr>	
+                <tr> <td>9418</td> <td>CIDADE TRISTE</td>  <td>JULIANA BARONI</td> </tr>	
+                <tr> <td>3463</td> <td>CIGANA</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>1358</td> <td>CINCO DIAS</td>  <td>WILSON SIDERAL</td> </tr>	
+                <tr> <td>3464</td> <td>CIÚME</td>  <td>ULTRAJE A RIGOR</td> </tr>	
+                <tr> <td>3049</td> <td>CIÚME DE VOCÊ</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>9644</td> <td>CIUMENTA</td>  <td>CÉSAR MENOTTI E FABIANO</td> </tr>	
+                <tr> <td>9419</td> <td>CLARÃO DA LUA</td>  <td>TCHE GAROTOS</td> </tr>	
+                <tr> <td>1448</td> <td>CLAREANA</td>  <td>JOYCE</td> </tr>	
+                <tr> <td>3312</td> <td>CODINOME BEIJA FLOR</td>  <td>CAZUZA</td> </tr>	
+                <tr> <td>3411</td> <td>COHAB CITY - VEM PRA CÁ</td>  <td>NEGRITUDE JUNIOR</td> </tr>	
+                <tr> <td>9420</td> <td>COISA ACESA</td>  <td>MORAES MOREIRA</td> </tr>	
+                <tr> <td>3512</td> <td>COISA BOA DEMAIS</td>  <td>CRAVO E CANELA</td> </tr>	
+                <tr> <td>3050</td> <td>COISA BONITA</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>9421</td> <td>COISA DE DEUS</td>  <td>RICK E RENNER</td> </tr>	
+                <tr> <td>3513</td> <td>COISAS DO BRASIL</td>  <td>GUILHERME ARANTES</td> </tr>	
+                <tr> <td>9422</td> <td>COLADINHO</td>  <td>BABADO NOVO</td> </tr>	
+                <tr> <td>3465</td> <td>COLEÇÃO</td>  <td>CASSIANO</td> </tr>	
+                <tr> <td>3051</td> <td>COMEÇARIA TUDO OUTRA VEZ</td>  <td>GONZAGUINHA</td> </tr>	
+                <tr> <td>3313</td> <td>COMEÇO, MEIO E FIM</td>  <td>ROUPA NOVA</td> </tr>	
+                <tr> <td>1323</td> <td>COMENTÁRIOS A RESPEITO DE JOHN</td>  <td>BELCHIOR</td> </tr>	
+                <tr> <td>3053</td> <td>COMO ?</td>  <td>NETINHO</td> </tr>	
+                <tr> <td>3412</td> <td>COMO DÓI</td>  <td>BANDA BRASIL</td> </tr>	
+                <tr> <td>3314</td> <td>COMO É GRANDE O MEU AMOR POR VOCÊ</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>9423</td> <td>COMO MÁGICA</td>  <td>NALDO E LULA</td> </tr>	
+                <tr> <td>3558</td> <td>COMO UM ANJO</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>3052</td> <td>COMO UMA ONDA</td>  <td>LULU SANTOS</td> </tr>	
+                <tr> <td>9424</td> <td>CONTRATO ASSINADO</td>  <td>DEBORAH BLANDO</td> </tr>	
+                <tr> <td>9425</td> <td>CONVERSA DE BOTEQUIM</td>  <td>IVAN LINS</td> </tr>	
+                <tr> <td>3054</td> <td>COPACABANA</td>  <td>JOÃO DE BARRO</td> </tr>	
+                <tr> <td>3315</td> <td>CORAÇÃO</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>3413</td> <td>CORAÇÃO DA GENTE</td>  <td>ELBA RAMALHO</td> </tr>	
+                <tr> <td>3055</td> <td>CORAÇÃO DE PAPEL</td>  <td>SÉRGIO REIS</td> </tr>	
+                <tr> <td>3056</td> <td>CORAÇÃO ESTÁ EM PEDAÇOS</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>3316</td> <td>CORAÇÃO NA CONTRA MÃO</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>3414</td> <td>CORAÇÃO SERTANEJO</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>3358</td> <td>CORAÇÃO TE ACALMA</td>  <td>SAMPA CREW</td> </tr>	
+                <tr> <td>7097</td> <td>CORAÇÕES PSICODELICOS</td>  <td>ROUPA NOVA</td> </tr>	
+                <tr> <td>3317</td> <td>CORAL DE ANJOS</td>  <td>ART POPULAR</td> </tr>	
+                <tr> <td>4105</td> <td>CORAZÓN PARTÍO</td>  <td>ALEJANDRO SANZ</td> </tr>	
+                <tr> <td>3318</td> <td>CORPO LÚCIDO</td>  <td>KATINGUELÊ</td> </tr>	
+                <tr> <td>1409</td> <td>COWBOY DO ASFALTO</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>3359</td> <td>CRENÇA E FÉ</td>  <td>BAMDAMEL</td> </tr>	
+                <tr> <td>9426</td> <td>CRIADO TIPO BICHO</td>  <td>TCHE GAROTOS</td> </tr>	
+                <tr> <td>3514</td> <td>CRISTINA</td>  <td>ROUPA NOVA</td> </tr>	
+                <tr> <td>9427</td> <td>DA COR BRASILEIRA</td>  <td>MARIA BETHÂNIA</td> </tr>	
+                <tr> <td>9428</td> <td>DANADA DA PREGUIÇA</td>  <td>LUK BROWN</td> </tr>	
+                <tr> <td>9430</td> <td>DANCE, DANCE, DANCE</td>  <td>JULIANA BARONI</td> </tr>	
+                <tr> <td>3319</td> <td>DANÇA DA XUXA</td>  <td>XUXA</td> </tr>	
+                <tr> <td>9429</td> <td>DANÇA DO BOLE BOLE</td>  <td>GRUPO ALGO MAIS</td> </tr>	
+                <tr> <td>1974</td> <td>DANÇA KUDURO</td>  <td>LATINO</td> </tr>	
+                <tr> <td>9431</td> <td>DE MAIS NINGUÉM</td>  <td>EDU RIBEIRO</td> </tr>	
+                <tr> <td>9432</td> <td>DE QUALQUER MANEIRA</td>  <td>ISABELLA TAVIANI</td> </tr>	
+                <tr> <td>9433</td> <td>DE REPENTE</td>  <td>LINOX</td> </tr>	
+                <tr> <td>3057</td> <td>DE REPENTE CALIFÓRNIA</td>  <td>LULU SANTOS</td> </tr>	
+                <tr> <td>3320</td> <td>DE VOLTA PRO ACONCHEGO</td>  <td>ELBA RAMALHO</td> </tr>	
+                <tr> <td>3515</td> <td>DE VOLTA PRO FUTURO</td>  <td>ROUPA NOVA</td> </tr>	
+                <tr> <td>9434</td> <td>DECLARAÇÃO</td>  <td>ZÉ HENRIQUE E GABRIEL</td> </tr>	
+                <tr> <td>9435</td> <td>DEFUNTO CAGUETE</td>  <td>BEZERRA DA SILVA</td> </tr>	
+                <tr> <td>3058</td> <td>DEIXA</td>  <td>LENY ANDRADE</td> </tr>	
+                <tr> <td>3059</td> <td>DEIXA CHOVER</td>  <td>GUILHERME ARANTES</td> </tr>	
+                <tr> <td>3516</td> <td>DEIXA EU TE QUERER</td>  <td>GRUPO TEMPERO</td> </tr>	
+                <tr> <td>9436</td> <td>DEIXA ISSO PRA LÁ</td>  <td>LULU SANTOS</td> </tr>	
+                <tr> <td>9437</td> <td>DEIXA EU VIR O NATAL</td>  <td>ROBERTO LEAL</td> </tr>	
+                <tr> <td>1359</td> <td>DELEGADA</td>  <td>FERNANDO E SOROCABA</td> </tr>	
+                <tr> <td>9438</td> <td>DELÍRIOS MORTAIS</td>  <td>DJAVAN</td> </tr>	
+                <tr> <td>3060</td> <td>DELÍRIO DO AMOR</td>  <td>ALCIONE</td> </tr>	
+                <tr> <td>1449</td> <td>DEPOIS DAQUELE BEIJO</td>  <td>BONDE DO FORRO</td> </tr>	
+                <tr> <td>3415</td> <td>DEPOIS DO ADEUS</td>  <td>GIAN E GIOVANI</td> </tr>	
+                <tr> <td>3062</td> <td>DESCULPE, MAS EU VOU CHORAR</td>  <td>FABIO JR/LEANDRO E LEONARDO</td> </tr>	
+                <tr> <td>3061</td> <td>DESCULPE O AUÊ</td>  <td>RITA LEE</td> </tr>	
+                <tr> <td>3466</td> <td>DESEJO DE AMAR</td>  <td>ELIANA DE LIMA</td> </tr>	
+                <tr> <td>3559</td> <td>DESEJO DE AMAR</td>  <td>CHRYSTIAN E RALF</td> </tr>	
+                <tr> <td>9439</td> <td>DESENCONTRO DE PRIMAVERA</td>  <td>HERMES AQUINO</td> </tr>	
+                <tr> <td>9440</td> <td>DESESPERAR JAMAIS</td>  <td>SIMONE</td> </tr>	
+                <tr> <td>3517</td> <td>DESLIZES</td>  <td>FAGNER</td> </tr>	
+                <tr> <td>3063</td> <td>DETALHES</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>3518</td> <td>DEUS</td>  <td>KID ABELHA</td> </tr>	
+                <tr> <td>3560</td> <td>DEVAGAR, DEVAGARINHO</td>  <td>MARTINHO DA VILA</td> </tr>	
+                <tr> <td>1360</td> <td>DIA DE FOLGA</td>  <td>RONNIE VON</td> </tr>	
+                <tr> <td>9661</td> <td>DIFÍCIL NÃO FALAR DE AMOR</td>  <td>DANIEL</td> </tr>	
+                <tr> <td>1333</td> <td>DIREITOS</td>  <td>KATIA</td> </tr>	
+                <tr> <td>9441</td> <td>DIRETO NO OLHAR</td>  <td>ROSANA</td> </tr>	
+                <tr> <td>1410</td> <td>DISTÂNCIA</td>  <td>SAMPA CREW</td> </tr>	
+                <tr> <td>2847</td> <td>DIARIAMENTE</td>  <td>NANDO REIS/MARISA MONTE</td> </tr>	
+                <tr> <td>1450</td> <td>DO FUNDO DO MEU CORAÇÃO</td>  <td>DANIEL</td> </tr>	
+                <tr> <td>3416</td> <td>DO JEITO QUE EU GOSTO</td>  <td>DO JEITO QUE EU GOSTO</td> </tr>	
+                <tr> <td>3064</td> <td>DO JEITO QUE A GENTE GOSTA</td>  <td>ELBA RAMALHO</td> </tr>	
+                <tr> <td>3417</td> <td>DO LEME AO PONTAL</td>  <td>TIM MAIA</td> </tr>	
+                <tr> <td>3519</td> <td>DOCE MISTÉRIO</td>  <td>LEANDRO E LEONARDO</td> </tr>	
+                <tr> <td>3065</td> <td>DOCE VAMPIRO</td>  <td>RITA LEE</td> </tr>	
+                <tr> <td>3418</td> <td>DÓI</td>  <td>GIAN E GIOVANI</td> </tr>	
+                <tr> <td>3360</td> <td>DÓI</td>  <td>ROBERTA MIRANDA</td> </tr>	
+                <tr> <td>3066</td> <td>DÓI DEMAIS</td>  <td>SPC (SÓ PRA CONTRARIAR)</td> </tr>	
+                <tr> <td>3321</td> <td>DOIDINHA POR MEU SAMBA</td>  <td>MOLEJO</td> </tr>	
+                <tr> <td>4074</td> <td>DOIS AMIGOS</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>3067</td> <td>DOIS PRA LÁ DOIS PRA CÁ</td>  <td>ELIS REGINA</td> </tr>	
+                <tr> <td>3419</td> <td>DONA</td>  <td>BETO BARBOSA</td> </tr>	
+                <tr> <td>3068</td> <td>DONA</td>  <td>ROUPA NOVA</td> </tr>	
+                <tr> <td>1378</td> <td>DONA CAROLA</td>  <td>VAVA</td> </tr>	
+                <tr> <td>6173</td> <td>DORMI NA PRAÇA</td>  <td>BRUNO E MARRONE</td> </tr>	
+                <tr> <td>3561</td> <td>DOUTOR</td>  <td>CIDADE NEGRA</td> </tr>	
+                <tr> <td>3562</td> <td>DOWNTOWN</td>  <td>CIDADE NEGRA</td> </tr>	
+                <tr> <td>3520</td> <td>É BAIANA</td>  <td>CLARA NUNES</td> </tr>	
+                <tr> <td>3322</td> <td>É BOM DEMAIS</td>  <td>SPC (SÓ PRA CONTRARIAR)</td> </tr>	
+                <tr> <td>1379</td> <td>E DAÍ</td>  <td>GUILHERME E SANTIAGO</td> </tr>	
+                <tr> <td>3069</td> <td>É DE CHOCOLATE</td>  <td>TREM DA ALEGRIA</td> </tr>	
+                <tr> <td>3467</td> <td>É DEMAIS</td>  <td>NEGRITUDE JUNIOR</td> </tr>	
+                <tr> <td>3070</td> <td>É HOJE</td>  <td>CAETANO VELOSO</td> </tr>	
+                <tr> <td>9442</td> <td>É LÁ QUE ELA MORA</td>  <td>TCHE GAROTOS</td> </tr>	
+                <tr> <td>9443</td> <td>É MAGOA</td>  <td>ANA CAROLINA</td> </tr>	
+                <tr> <td>3071</td> <td>É O AMOR</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>9444</td> <td>É SÁBADO O DIA</td>  <td>TCHE BARBARIDADE</td> </tr>	
+                <tr> <td>3072</td> <td>É TARDE DEMAIS</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>3323</td> <td>EDUARDO E MÔNICA</td>  <td>LEGIÃO URBANA</td> </tr>	
+                <tr> <td>9445</td> <td>EDUCAÇÃO SENTIMENTAL</td>  <td>KID ABELHA</td> </tr>	
+                <tr> <td>3073</td> <td>EDUCAÇÃO SENTIMENTAL II</td>  <td>KID ABELHA</td> </tr>	
+                <tr> <td>9446</td> <td>EGOTRIP</td>  <td>BLITZ</td> </tr>	
+                <tr> <td>9447</td> <td>ELA UNE TODAS AS COISAS</td>  <td>JORGE VERCILLO</td> </tr>	
+                <tr> <td>9448</td> <td>EM NOVENTA E DOIS</td>  <td>KID ABELHA</td> </tr>	
+                <tr> <td>3563</td> <td>EMACONHADA</td>  <td>AKUNDUM</td> </tr>	
+                <tr> <td>3074</td> <td>EMOÇÕES</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>3361</td> <td>ENDOIDECEU</td>  <td>ALCIONE/FAGNER</td> </tr>	
+                <tr> <td>3468</td> <td>ENGENHO DE DENTRO</td>  <td>JORGE BENJOR</td> </tr>	
+                <tr> <td>3420</td> <td>ENTRE TAPAS E BEIJOS</td>  <td>LEANDRO E LEONARDO</td> </tr>	
+                <tr> <td>6176</td> <td>ENROSCA</td>  <td>FABIO JR</td> </tr>	
+                <tr> <td>3075</td> <td>ERA UM GAROTO QUE COMO EU...</td>  <td>ENGENHEIROS DO HAWAII</td> </tr>	
+                <tr> <td>3076</td> <td>ESCRITO NAS ESTRELAS</td>  <td>TETÊ ESPÍNDOLA</td> </tr>	
+                <tr> <td>3077</td> <td>ESMOLA</td>  <td>SKANK</td> </tr>	
+                <tr> <td>3078</td> <td>ESPANHOLA</td>  <td>14 BIS</td> </tr>	
+                <tr> <td>3079</td> <td>ESPELHO D'ÁGUA</td>  <td>PATRICIA MARX</td> </tr>	
+                <tr> <td>9449</td> <td>ESPELHO MÁGICO</td>  <td>SILVIO BRITO</td> </tr>	
+                <tr> <td>1380</td> <td>ESPERO A MINHA VEZ</td>  <td>NX ZERO</td> </tr>	
+                <tr> <td>9450</td> <td>ESQUADROS</td>  <td>ADRIANA CALCANHOTO</td> </tr>	
+                <tr> <td>9451</td> <td>ESQUECE E VEM</td>  <td>NICO REZENDE</td> </tr>	
+                <tr> <td>3080</td> <td>ESQUEÇA</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>3081</td> <td>ESSA TAL LIBERDADE</td>  <td>SPC (SÓ PRA CONTRARIAR)</td> </tr>	
+                <tr> <td>3421</td> <td>ESSE AMOR QUE ME MATA</td>  <td>CHRYSTIAN E RALF</td> </tr>	
+                <tr> <td>9452</td> <td>ESSE BRILHO EM TEU OLHAR</td>  <td>LULU SANTOS</td> </tr>	
+                <tr> <td>2865</td> <td>ESSE CARA SOU EU</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>3082</td> <td>ESSES MOÇOS</td>  <td>LUPICINIO RODRIGUES</td> </tr>	
+                <tr> <td>1334</td> <td>ESTÁ DIFÍCIL ESQUECER</td>  <td>TIM MAIA</td> </tr>	
+                <tr> <td>3422</td> <td>ESTA NOITE FOI MARAVILHOSA</td>  <td>LEANDRO E LEONARDO</td> </tr>	
+                <tr> <td>3362</td> <td>ESTOU APAIXONADO</td>  <td>DANIEL</td> </tr>	
+                <tr> <td>3083</td> <td>ESTOU MAL</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>1361</td> <td>ESTRELA CADENTE</td>  <td>VICTOR E LEO</td> </tr>	
+                <tr> <td>3084</td> <td>ESTRELA PRIMEIRA</td>  <td>BANDA CHEIRO DE AMOR</td> </tr>	
+                <tr> <td>3085</td> <td>ESTÚPIDO CUPIDO</td>  <td>CELLY CAMPELLO</td> </tr>	
+                <tr> <td>1362</td> <td>EU AMO VOCÊ</td>  <td>LATINO</td> </tr>	
+                <tr> <td>3324</td> <td>EU AMO VOCÊ</td>  <td>GRUPO SAMPA</td> </tr>	
+                <tr> <td>3086</td> <td>EU E ELA (ELA E O NAMORADO DELA)</td>  <td>GRUPO RAÇA</td> </tr>	
+                <tr> <td>3087</td> <td>EU E ELA</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>3469</td> <td>EU JURO</td>  <td>LEANDRO E LEONARDO</td> </tr>	
+                <tr> <td>3088</td> <td>EU MENTI</td>  <td>ALEXANDRE PIRES</td> </tr>	
+                <tr> <td>1076</td> <td>EU NÃO QUERO BRIGAR MAIS NÃO</td>  <td>FREJAT</td> </tr>	
+                <tr> <td>3470</td> <td>EU NÃO SEI DANÇAR</td>  <td>MARIA MAUD</td> </tr>	
+                <tr> <td>1411</td> <td>EU NÃO VOU MAIS CHORAR</td>  <td>AVIÕES DO FORRO</td> </tr>	
+                <tr> <td>3089</td> <td>EU NASCI HÁ DEZ MIL ANOS ATRÁS</td>  <td>RAUL SEIXAS</td> </tr>	
+                <tr> <td>3363</td> <td>EU NUNCA ESTIVE TÃO APAIXONADO</td>  <td>FABIO JR</td> </tr>	
+                <tr> <td>1421</td> <td>EU QUERIA TER UMA BOMBA</td>  <td>CAZUZA</td> </tr>	
+                <tr> <td>9453</td> <td>EU QUERO ESSE AMOR</td>  <td>CHICLETE COM BANANA</td> </tr>	
+                <tr> <td>1381</td> <td>EU QUERO SÓ VOCÊ</td>  <td>CHICABANA</td> </tr>	
+                <tr> <td>3090</td> <td>EU SEI</td>  <td>LEGIÃO URBANA</td> </tr>	
+                <tr> <td>3091</td> <td>EU SÓ QUERO UM XODÓ</td>  <td>DOMINGUINHOS</td> </tr>	
+                <tr> <td>3423</td> <td>EU SOU CHIFRUDO</td>  <td>TIRIRICA</td> </tr>	
+                <tr> <td>3424</td> <td>EU SOU FREE</td>  <td>SEMPRE LIVRE</td> </tr>	
+                <tr> <td>3521</td> <td>EU TE AMO, TE AMO, TE AMO</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>3092</td> <td>EU TE AMO </td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>3093</td> <td>EU TE AMO, TE AMO, TE AMO</td>  <td>BANDA BRASIL</td> </tr>	
+                <tr> <td>9454</td> <td>EU VOU, EU VOU</td>  <td>LUCYNHA CINTRA</td> </tr>	
+                <tr> <td>1451</td> <td>EU VOU CAIR NA ZOEIRA</td>  <td>TCHE GAROTOS</td> </tr>	
+                <tr> <td>1452</td> <td>EU VOU TE BUSCAR</td>  <td>PEDRO PAULO E MATHEUS</td> </tr>	
+                <tr> <td>3425</td> <td>EVA</td>  <td>RADIO TAXI</td> </tr>	
+                <tr> <td>3094</td> <td>EVIDÊNCIAS</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>3095</td> <td>EXAGERADO</td>  <td>CAZUZA</td> </tr>	
+                <tr> <td>3096</td> <td>EXPLODE CORAÇÃO</td>  <td>MARIA BETHÂNIA</td> </tr>	
+                <tr> <td>3097</td> <td>ÊXTASE</td>  <td>GUILHERME ARANTES</td> </tr>	
+                <tr> <td>9455</td> <td>EXTRAVASA</td>  <td>BABADO NOVO</td> </tr>	
+                <tr> <td>1422</td> <td>FÃ</td>  <td>CHRISTIAN E CRISTIANO</td> </tr>	
+                <tr> <td>9456</td> <td>FADA</td>  <td>VICTOR E LEO</td> </tr>	
+                <tr> <td>3471</td> <td>FASCINAÇÃO</td>  <td>ELIS REGINA/NEY MATOGROSSO</td> </tr>	
+                <tr> <td>9457</td> <td>FATO CONSUMADO</td>  <td>DJAVAN</td> </tr>	
+                <tr> <td>1453</td> <td>FAZ AMOR QUE PASSA</td>  <td>RICK E RENNER</td> </tr>	
+                <tr> <td>3098</td> <td>FAZ MAIS UMA VEZ COMIGO</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>3099</td> <td>FAZ PARTE DO MEU SHOW</td>  <td>CAZUZA</td> </tr>	
+                <tr> <td>3564</td> <td>FEITO EU</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>3522</td> <td>FESTA DE RODEIO</td>  <td>LEANDRO E LEONARDO</td> </tr>	
+                <tr> <td>3565</td> <td>FESTA DE UM POVO</td>  <td>CARRAPICHO</td> </tr>	
+                <tr> <td>3100</td> <td>FESTA DO ESTICA E PUXA</td>  <td>XUXA</td> </tr>	
+                <tr> <td>3101</td> <td>FESTA DO INTERIOR</td>  <td>GAL COSTA</td> </tr>	
+                <tr> <td>9458</td> <td>FICAR POR FICAR</td>  <td>BRUNO E MARRONE</td> </tr>	
+                <tr> <td>1382</td> <td>FICO LOUCO</td>  <td>ITAMAR ASSUMPÇÃO</td> </tr>	
+                <tr> <td>1383</td> <td>FIM DE TARDE</td>  <td>BRUNA CARAM</td> </tr>	
+                <tr> <td>9459</td> <td>FINGE QUE NÃO FALOU</td>  <td>NICO REZENDE</td> </tr>	
+                <tr> <td>3102</td> <td>FIO DE CABELO</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>3103</td> <td>FLAGRA</td>  <td>RITA LEE</td> </tr>	
+                <tr> <td>3325</td> <td>FLAGRANTE</td>  <td>GRUPO SAMPA</td> </tr>	
+                <tr> <td>1423</td> <td>FLOR DA PELE</td>  <td>ZECA BALEIRO</td> </tr>	
+                <tr> <td>3104</td> <td>FLOR DE LIZ</td>  <td>DJAVAN</td> </tr>	
+                <tr> <td>1324</td> <td>FLOR DO FUTURO</td>  <td>CLAUDIO ZOLI</td> </tr>	
+                <tr> <td>1335</td> <td>FLOR DO MEU SERRTÃO</td>  <td>LEONARDO</td> </tr>	
+                <tr> <td>3523</td> <td>FLORENTINA</td>  <td>TIRIRICA</td> </tr>	
+                <tr> <td>9460</td> <td>FLORESCE</td>  <td>RIONEGRO E SOLIMOES</td> </tr>	
+                <tr> <td>3326</td> <td>FOGE DE MIM</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>3105</td> <td>FOGO E PAIXÃO</td>  <td>WANDO</td> </tr>	
+                <tr> <td>3566</td> <td>FOI A PRIMEIRA VEZ</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>3106</td> <td>FOLIA BRASILEIRA</td>  <td>ELBA RAMALHO</td> </tr>	
+                <tr> <td>3107</td> <td>FRENTE Á FRENTE</td>  <td>ROYCE DO CAVACO</td> </tr>	
+                <tr> <td>3426</td> <td>FRUTO DOS DEUSES</td>  <td>GINGA PURA</td> </tr>	
+                <tr> <td>1605</td> <td>FUGIDINHA</td>  <td>MICHEL TELO</td> </tr>	
+                <tr> <td>1424</td> <td>FUI</td>  <td>EXALTASAMBA</td> </tr>	
+                <tr> <td>3108</td> <td>FULLGÁS</td>  <td>MARINA LIMA</td> </tr>	
+                <tr> <td>9461</td> <td>GAITEIRO AGRADÃO</td>  <td>GRUPO TALAGACO</td> </tr>	
+                <tr> <td>1454</td> <td>GALERA DO BOTECO</td>  <td>JOÃO NETO E FREDERICO</td> </tr>	
+                <tr> <td>3567</td> <td>GAMEI</td>  <td>EXALTASAMBA</td> </tr>	
+                <tr> <td>3109</td> <td>GAROTA DE IPANEMA</td>  <td>TOM JOBIM</td> </tr>	
+                <tr> <td>3472</td> <td>GAROTA NACIONAL</td>  <td>SKANK</td> </tr>	
+                <tr> <td>1384</td> <td>GATAS EXTRAORDINÁRIAS</td>  <td>CASSIA ELLER</td> </tr>	
+                <tr> <td>1336</td> <td>GAZELA</td>  <td>WANDO</td> </tr>	
+                <tr> <td>9462</td> <td>GERALDINOS E ARQUIBALDOS</td>  <td>CHICAS</td> </tr>	
+                <tr> <td>4195</td> <td>GIZ</td>  <td>LEGIÃO URBANA</td> </tr>	
+                <tr> <td>3327</td> <td>GITA</td>  <td>RAUL SEIXAS</td> </tr>	
+                <tr> <td>3110</td> <td>GOSTAVA TANTO DE VOCÊ</td>  <td>TIM MAIA</td> </tr>	
+                <tr> <td>3111</td> <td>GOSTOSO DEMAIS</td>  <td>MARIA BETHÂNIA</td> </tr>	
+                <tr> <td>3524</td> <td>GRAND' HOTEL</td>  <td>KID ABELHA</td> </tr>	
+                <tr> <td>9463</td> <td>GRÃO DE AMOR</td>  <td>TRIBALISTAS</td> </tr>	
+                <tr> <td>9464</td> <td>GRILO NA CUCA</td>  <td>DUDU FRANCA</td> </tr>	
+                <tr> <td>9465</td> <td>GULA</td>  <td>EDUARDO DUSEK</td> </tr>	
+                <tr> <td>3112</td> <td>HÁ TEMPOS</td>  <td>LEGIÃO URBANA</td> </tr>	
+                <tr> <td>3113</td> <td>HINO DO CORINTHIANS</td>  <td>CORINTHIANS</td> </tr>	
+                <tr> <td>3427</td> <td>HINO DO PALMEIRAS</td>  <td>PALMEIRAS</td> </tr>	
+                <tr> <td>3126</td> <td>HINO DO SANTOS</td>  <td>SANTOS</td> </tr>	
+                <tr> <td>3248</td> <td>HINO DO SÃO PAULO</td>  <td>SÃO PAULO</td> </tr>	
+                <tr> <td>1412</td> <td>HOJE TEM SAMBA</td>  <td>ARLINDO CRUZ</td> </tr>	
+                <tr> <td>3114</td> <td>HOMEM COM "H"</td>  <td>NEY MATOGROSSO</td> </tr>	
+                <tr> <td>1425</td> <td>HORA DO CLARÃO</td>  <td>ALMIR SATER</td> </tr>	
+                <tr> <td>2707</td> <td>HUMILDE RESIDÊNCIA</td>  <td>MICHEL TELO</td> </tr>	
+                <tr> <td>9466</td> <td>I LOVE YOU BABY</td>  <td>ADRIANA</td> </tr>	
+                <tr> <td>3364</td> <td>IDEOLOGIA</td>  <td>CAZUZA</td> </tr>	
+                <tr> <td>3115</td> <td>ILARIÊ</td>  <td>XUXA</td> </tr>	
+                <tr> <td>9467</td> <td>ILUMINA</td>  <td>IVETE SANGALO</td> </tr>	
+                <tr> <td>1426</td> <td>IMÃ</td>  <td>PAULINHO MOSKA</td> </tr>	
+                <tr> <td>1427</td> <td>INCÊNDIO NO CARNAVAL</td>  <td>MOACYR FRANCO</td> </tr>	
+                <tr> <td>3365</td> <td>ÍNDIA</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>3568</td> <td>INDIFERENÇA</td>  <td>ZEZÉ DE CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>3116</td> <td>INDIFERENÇA</td>  <td>NEGRITUDE JUNIOR</td> </tr>	
+                <tr> <td>3569</td> <td>ÍNDIOS</td>  <td>LEGIÃO URBANA</td> </tr>	
+                <tr> <td>9468</td> <td>INFINITO</td>  <td>DJAVAN</td> </tr>	
+                <tr> <td>3117</td> <td>INIGUALÁVEL PAIXÃO</td>  <td>GRUPO PIRRACA</td> </tr>	
+                <tr> <td>1363</td> <td>INVEJA</td>  <td>MEGH STOCK</td> </tr>	
+                <tr> <td>1428</td> <td>INVENCÍVEL</td>  <td> BELO</td> </tr>	
+                <tr> <td>1429</td> <td>INVENTO</td>  <td>NEY MATOGROSSO</td> </tr>	
+                <tr> <td>3366</td> <td>IOLANDA</td>  <td>NEY MATOGROSSO</td> </tr>	
+                <tr> <td>9469</td> <td>IRA</td>  <td>CLAUDIO ZOLI</td> </tr>	
+                <tr> <td>3118</td> <td>ISSO AQUI TÁ BOM DEMAIS</td>  <td>DOMINGUINHOS</td> </tr>	
+                <tr> <td>3525</td> <td>ISSO É FUNDO DE QUINTAL</td>  <td>LECI BRANDÃO</td> </tr>	
+                <tr> <td>3119</td> <td>JACKIE TEQUILA</td>  <td>SKANK</td> </tr>	
+                <tr> <td>1430</td> <td>JANELA INDISCRETA</td>  <td>LULU SANTOS</td> </tr>	
+                <tr> <td>3120</td> <td>JEITO FELINO</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>3570</td> <td>JÉSSICA</td>  <td>BIRO DO CAVACO</td> </tr>	
+                <tr> <td>3121</td> <td>JOGO DE CINTURA</td>  <td>ELBA RAMALHO</td> </tr>	
+                <tr> <td>3571</td> <td>LA BELLA LUNA</td>  <td>PARALAMAS DO SUCESSO</td> </tr>	
+                <tr> <td>3572</td> <td>LA SOLITUDE</td>  <td>LAURA PAUSINI</td> </tr>	
+                <tr> <td>3122</td> <td>LÁ VEM NEGÃO</td>  <td>CRAVO E CANELA</td> </tr>	
+                <tr> <td>3123</td> <td>LÁ VEM O ALEMÃO</td>  <td>MAMONAS ASSASSINAS</td> </tr>	
+                <tr> <td>1455</td> <td>LÁ VEM O TREM</td>  <td>AGEPE</td> </tr>	
+                <tr> <td>1456</td> <td>LÁGRIMAS E VINHO</td>  <td>BRUNO E MARRONE</td> </tr>	
+                <tr> <td>9470</td> <td>LAMA</td>  <td>NUBIA LAFAYETTE</td> </tr>	
+                <tr> <td>3125</td> <td>LANCE LEGAL</td>  <td>GUILHERME ARANTES</td> </tr>	
+                <tr> <td>3124</td> <td>LANÇA PERFUME</td>  <td>RITA LEE</td> </tr>	
+                <tr> <td>3526</td> <td>LANTERNA DOS AFOGADOS</td>  <td>PARALAMAS DO SUCESSO</td> </tr>	
+                <tr> <td>1385</td> <td>LEÃO FERIDO</td>  <td>BIAFRA</td> </tr>	
+                <tr> <td>3127</td> <td>LEMBRANÇA DE UM BEIJO</td>  <td>FAGNER</td> </tr>	
+                <tr> <td>3128</td> <td>LESÕES CORPORAIS</td>  <td>EMILIO SANTIAGO</td> </tr>	
+                <tr> <td>1431</td> <td>LIG-LIG-LIG-LÉ</td>  <td>NEY MATOGROSSO</td> </tr>	
+                <tr> <td>6615</td> <td>LIGAÇÃO URBANA</td>  <td>BRUNO E MARRONE</td> </tr>	
+                <tr> <td>3328</td> <td>LILÁS</td>  <td>DJAVAN</td> </tr>	
+                <tr> <td>3428</td> <td>LINDA</td>  <td>SPC (SÓ PRA CONTRARIAR)</td> </tr>	
+                <tr> <td>3527</td> <td>LINDA DEMAIS</td>  <td>ROUPA NOVA</td> </tr>	
+                <tr> <td>3129</td> <td>LINDO BALÃO AZUL</td>  <td>PIRLIMPIMPIM</td> </tr>	
+                <tr> <td>3130</td> <td>LINHA DO EQUADOR</td>  <td>DJAVAN</td> </tr>	
+                <tr> <td>1457</td> <td>LOBO MAU</td>  <td>IVETE SANGALO</td> </tr>	
+                <tr> <td>3573</td> <td>LOIRA GELADA</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>9471</td> <td>LOUCAS HORAS</td>  <td>GUILHERME ARANTES</td> </tr>	
+                <tr> <td>1413</td> <td>LUA BRANCA</td>  <td>VERÔNICA SABINO</td> </tr>	
+                <tr> <td>3367</td> <td>LUA DE CRISTAL</td>  <td>XUXA</td> </tr>	
+                <tr> <td>7994</td> <td>LUZ DOS OLHOS</td>  <td>NANDO REIS</td> </tr>	
+                <tr> <td>3473</td> <td>LUA E FLOR</td>  <td>OSWALDO MONTENEGRO</td> </tr>	
+                <tr> <td>1337</td> <td>LUGAR DA ALEGRIA</td>  <td>BANDA EVA</td> </tr>	
+                <tr> <td>3329</td> <td>LUÍZA</td>  <td>TOM JOBIM</td> </tr>	
+                <tr> <td>3368</td> <td>MACARENA</td>  <td>THE GIRLY TEAM</td> </tr>	
+                <tr> <td>3131</td> <td>MADALENA</td>  <td>ELIS REGINA</td> </tr>	
+                <tr> <td>1458</td> <td>MÃE</td>  <td>RICK E RENNER</td> </tr>	
+                <tr> <td>3429</td> <td>MAGIA</td>  <td>ANGELICA</td> </tr>	
+                <tr> <td>1459</td> <td>MAGRELINHA</td>  <td>LUIZ MELODIA</td> </tr>	
+                <tr> <td>1460</td> <td>MAIOR É DEUS</td>  <td>MOINHO</td> </tr>	
+                <tr> <td>3132</td> <td>MAIS UMA DE AMOR</td>  <td>BLITZ</td> </tr>	
+                <tr> <td>3430</td> <td>MAIS UMA NOITE SEM VOCÊ</td>  <td>LEONARDO</td> </tr>	
+                <tr> <td>3330</td> <td>MAJESTADE O SABIÁ</td>  <td>ROBERTA MIRANDA</td> </tr>	
+                <tr> <td>9472</td> <td>MALEMOLÊNCIA</td>  <td>CEU</td> </tr>	
+                <tr> <td>3133</td> <td>MALUCO BELEZA</td>  <td>RAUL SEIXAS</td> </tr>	
+                <tr> <td>3134</td> <td>MAMÃE PASSOU AÇÚCAR EM MIM</td>  <td>WILSON SIMONAL</td> </tr>	
+                <tr> <td>3431</td> <td>MAMMA MARIA</td>  <td>GRAFITE</td> </tr>	
+                <tr> <td>9473</td> <td>MANHÃ BONITA</td>  <td>ROLANDO BOLDRIN</td> </tr>	
+                <tr> <td>3135</td> <td>MANIA DE VOCÊ</td>  <td>RITA LEE</td> </tr>	
+                <tr> <td>3136</td> <td>MANUEL</td>  <td>ED MOTTA</td> </tr>	
+                <tr> <td>3137</td> <td>MARAVILHA</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>3369</td> <td>MARAVILHOSA</td>  <td>PRETO NO BRANCO</td> </tr>	
+                <tr> <td>3574</td> <td>MARIA</td>  <td>RICKY MARTIN</td> </tr>	
+                <tr> <td>3370</td> <td>MARIA CHIQUINHA</td>  <td>SANDY E JUNIOR</td> </tr>	
+                <tr> <td>3138</td> <td>MARIANA, PARTE MINHA</td>  <td>SEM COMPROMISSO</td> </tr>	
+                <tr> <td>3139</td> <td>MARINA</td>  <td>DICK FARNEY</td> </tr>	
+                <tr> <td>3575</td> <td>MARQUEI UM X</td>  <td>XUXA</td> </tr>	
+                <tr> <td>3140</td> <td>MARROM BOM BOM</td>  <td>OS MORENOS</td> </tr>	
+                <tr> <td>9474</td> <td>MARY JANE</td>  <td>PAPAS DA LINGUA</td> </tr>	
+                <tr> <td>3474</td> <td>MARYLOU</td>  <td>ULTRAJE A RIGOR</td> </tr>	
+                <tr> <td>3141</td> <td>MASCARADO</td>  <td>EMILIO SANTIAGO</td> </tr>	
+                <tr> <td>9475</td> <td>MATA-ME DEPRESSA</td>  <td>NUBIA LAFAYETTE</td> </tr>	
+                <tr> <td>3142</td> <td>MATRIZ OU FILIAL</td>  <td>JAMELÃO</td> </tr>	
+                <tr> <td>3371</td> <td>ME ABRAÇA</td>  <td>BANDA EVA</td> </tr>	
+                <tr> <td>9476</td> <td>ME AME OU ME DEIXE</td>  <td>WANDERLEA</td> </tr>	
+                <tr> <td>3143</td> <td>ME CHAMA</td>  <td>LOBÃO</td> </tr>	
+                <tr> <td>3528</td> <td>ME DÊ MOTIVO</td>  <td>TIM MAIA</td> </tr>	
+                <tr> <td>3432</td> <td>ME DEIXAS LOUCA</td>  <td>ELIS REGINA</td> </tr>	
+                <tr> <td>3144</td> <td>ME LEVA</td>  <td>LATINO</td> </tr>	
+                <tr> <td>3145</td> <td>ME LEVA CONTIGO</td>  <td>COPACABANA BEAT</td> </tr>	
+                <tr> <td>3146</td> <td>ME LEVA JUNTO COM VOCÊ</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>3372</td> <td>ME PEGUE SE QUISER</td>  <td>CHICLETE COM BANANA</td> </tr>	
+                <tr> <td>9477</td> <td>ME TIRA DO AR</td>  <td>MARINA ELALI</td> </tr>	
+                <tr> <td>3433</td> <td>MEDO</td>  <td>GIAN E GIOVANI</td> </tr>	
+                <tr> <td>3147</td> <td>MEDO DA CHUVA</td>  <td>RAUL SEIXAS</td> </tr>	
+                <tr> <td>3148</td> <td>MEL DA SUA BOCA</td>  <td>COPACABANA BEAT</td> </tr>	
+                <tr> <td>3149</td> <td>MELÔ DO MARINHEIRO</td>  <td>PARALAMAS DO SUCESSO</td> </tr>	
+                <tr> <td>3576</td> <td>MELÔ DO STRIP TEASE</td>  <td>COMPANHIA DO PAGODE</td> </tr>	
+                <tr> <td>3150</td> <td>MELÔ DO TCHAN</td>  <td>É O TCHAN</td> </tr>	
+                <tr> <td>3151</td> <td>MEMÓRIAS</td>  <td>LEONARDO</td> </tr>	
+                <tr> <td>6541</td> <td>MENINA</td>  <td>BRUNO E MARRONE</td> </tr>	
+                <tr> <td>3152</td> <td>MENINA (SERESTA)</td>  <td>PAULINHO NOGUEIRA</td> </tr>	
+                <tr> <td>3577</td> <td>MENINA LINDA</td>  <td>NETINHO</td> </tr>	
+                <tr> <td>3434</td> <td>MENINA VENENO</td>  <td>RITCHIE</td> </tr>	
+                <tr> <td>3529</td> <td>MENINO LINDO</td>  <td>FLOR DE CHEIRO</td> </tr>	
+                <tr> <td>3475</td> <td>MESMO ASSIM</td>  <td>SAMPA CREW</td> </tr>	
+                <tr> <td>1338</td> <td>METEORO</td>  <td>LUAN SANTANA</td> </tr>	
+                <tr> <td>3153</td> <td>MEU AMOR NÃO VÁ EMBORA</td>  <td>BETO BARBOSA</td> </tr>	
+                <tr> <td>3578</td> <td>MEU BEM, MEU MAL</td>  <td>GAL COSTA</td> </tr>	
+                <tr> <td>3154</td> <td>MEU BEM QUERER</td>  <td>DJAVAN</td> </tr>	
+                <tr> <td>9478</td> <td>MEU CORAÇÃO</td>  <td>CIDADE NEGRA</td> </tr>	
+                <tr> <td>3579</td> <td>MEU CORAÇÃO E TEU</td>  <td>ROYCE DO CAVACO</td> </tr>	
+                <tr> <td>3331</td> <td>MEU DENGO</td>  <td>ROBERTA MIRANDA</td> </tr>	
+                <tr> <td>3155</td> <td>MEU ERRO</td>  <td>PARALAMAS DO SUCESSO</td> </tr>	
+                <tr> <td>9479</td> <td>MEU EU EM VOCÊ</td>  <td>VICTOR E LEO</td> </tr>	
+                <tr> <td>3373</td> <td>MEU JEITO DE SER</td>  <td>SPC (SÓ PRA CONTRARIAR)</td> </tr>	
+                <tr> <td>3156</td> <td>MEU MUNDO E NADA MAIS</td>  <td>GUILHERME ARANTES</td> </tr>	
+                <tr> <td>9480</td> <td>MEU NOME É TRUPIZUPE</td>  <td>ZE RAMALHO</td> </tr>	
+                <tr> <td>3157</td> <td>MEU PRIMEIRO AMOR</td>  <td>JOANNA</td> </tr>	
+                <tr> <td>9481</td> <td>MEU SEGREDO</td>  <td>LUIZ CLAUDIO E GIULIANO</td> </tr>	
+                <tr> <td>3158</td> <td>MEU VAQUEIRO MEU PEÃO</td>  <td>MASTRUZ COM LEITE</td> </tr>	
+                <tr> <td>9482</td> <td>MINA DO CONDOMÍNIO</td>  <td>SEU JORGE</td> </tr>	
+                <tr> <td>3476</td> <td>MINHA ESTRELA PERDIDA</td>  <td>DANIEL</td> </tr>	
+                <tr> <td>3159</td> <td>MINHA FAMA DE MAU</td>  <td>ERASMO CARLOS</td> </tr>	
+                <tr> <td>1679</td> <td>MINHA MULHER NÃO DEIXA NÃO</td>  <td>REGINHO E BANDA SURPRESA</td> </tr>	
+                <tr> <td>9483</td> <td>MINHA PALHOÇA</td>  <td>SILVIO CALDAS</td> </tr>	
+                <tr> <td>1691</td> <td>MINHA RAZÃO</td>  <td>EXALTASAMBA</td> </tr>	
+                <tr> <td>3477</td> <td>MINHA VIDA</td>  <td>LULU SANTOS</td> </tr>	
+                <tr> <td>1364</td> <td>MINHA VOZ, MINHA VIDA</td>  <td>CAETANO VELOSO</td> </tr>	
+                <tr> <td>9484</td> <td>MIOU</td>  <td>FALAMANSA</td> </tr>	
+                <tr> <td>3160</td> <td>MOÇA</td>  <td>WANDO</td> </tr>	
+                <tr> <td>3161</td> <td>MORDIDA NA MAÇA</td>  <td>WANDO</td> </tr>	
+                <tr> <td>1461</td> <td>MORENINHA SE EU TE PEDISSE</td>  <td>RENATO TEXEIRA</td> </tr>	
+                <tr> <td>3162</td> <td>MUDA DE VIDA</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>1386</td> <td>MUITAS PESSOAS</td>  <td>SECOS E MOLHADOS</td> </tr>	
+                <tr> <td>9485</td> <td>MUITO ALÉM DO PRAZER</td>  <td>BANDA CALYPSO</td> </tr>	
+                <tr> <td>3163</td> <td>MUITO ESTRANHO</td>  <td>DALTO/NANDO REIS</td> </tr>	
+                <tr> <td>3374</td> <td>MULATA ASSANHADA</td>  <td>ATAULFO ALVES</td> </tr>	
+                <tr> <td>3580</td> <td>MULHER DE 40</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>3164</td> <td>MULHER PEQUENA</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>3332</td> <td>MULHERES</td>  <td>MARTINHO DA VILA</td> </tr>	
+                <tr> <td>3333</td> <td>MÚSICA DE RUA</td>  <td>DANIELA MERCURY</td> </tr>	
+                <tr> <td>3165</td> <td>MÚSICA URBANA</td>  <td>CAPITAL INICIAL</td> </tr>	
+                <tr> <td>1325</td> <td>NA BASE DO BEIJO</td>  <td>IVETE SANGALO</td> </tr>	
+                <tr> <td>3375</td> <td>NA BOQUINHA DA GARRAFA</td>  <td>É O TCHAN</td> </tr>	
+                <tr> <td>3581</td> <td>NA HORA "H"</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>1387</td> <td>NA HORA DO ALMOÇO</td>  <td>BELCHIOR</td> </tr>	
+                <tr> <td>3478</td> <td>NA RUA, NA CHUVA, NA FAZENDA</td>  <td>KID ABELHA</td> </tr>	
+                <tr> <td>1326</td> <td>NA SOMBRA DE UMA ÁRVORE</td>  <td>HYLDON</td> </tr>	
+                <tr> <td>9486</td> <td>NA VOLTA QUE O MUNDO DÁ</td>  <td>MÔNICA SALMASO</td> </tr>	
+                <tr> <td>3334</td> <td>NADA MAIS</td>  <td>GAL COSTA</td> </tr>	
+                <tr> <td>9487</td> <td>NADA ORIGINAL</td>  <td>PATO FU</td> </tr>	
+                <tr> <td>3166</td> <td>NADA POR MIM</td>  <td>KID ABELHA</td> </tr>	
+                <tr> <td>9488</td> <td>NADA PRA MIM</td>  <td>ANA CAROLINA</td> </tr>	
+                <tr> <td>1365</td> <td>NADA SÉRIO</td>  <td>JOANNA</td> </tr>	
+                <tr> <td>9489</td> <td>NAMORADOS DA LUA</td>  <td>MILTON NASCIMENTO</td> </tr>	
+                <tr> <td>3582</td> <td>NANI</td>  <td>ART POPULAR</td> </tr>	
+                <tr> <td>3167</td> <td>NÃO ADIANTA CHORAR</td>  <td>LATINO</td> </tr>	
+                <tr> <td>3168</td> <td>NÃO APRENDI DIZER ADEUS</td>  <td>LEANDRO E LEONARDO</td> </tr>	
+                <tr> <td>1462</td> <td>NÃO DÁ O BRAÇO A TORCER</td>  <td>SWING E SIMPATIA</td> </tr>	
+                <tr> <td>3169</td> <td>NÃO DEIXE O SAMBA MORRER</td>  <td>ALCIONE</td> </tr>	
+                <tr> <td>9490</td> <td>NÃO ENCHE</td>  <td>CAETANO VELOSO</td> </tr>	
+                <tr> <td>9491</td> <td>NÃO FAZ MAL A NINGUÉM</td>  <td>LENINE</td> </tr>	
+                <tr> <td>9492</td> <td>NÃO HÁ HORA NEM LUGAR</td>  <td>JULIANA BARONI</td> </tr>	
+                <tr> <td>3335</td> <td>NÃO OLHA ASSIM</td>  <td>LEANDRO E LEONARDO</td> </tr>	
+                <tr> <td>3170</td> <td>NÃO QUERO DINHEIRO SÓ QUERO AMAR</td>  <td>TIM MAIA</td> </tr>	
+                <tr> <td>9493</td> <td>NÃO RECLAME MAIS</td>  <td>DETONAUTAS</td> </tr>	
+                <tr> <td>1388</td> <td>NÃO SOU SEU BRINQUEDO</td>  <td>ALISSON E RYAN</td> </tr>	
+                <tr> <td>9494</td> <td>NÃO TEM OUTRO JEITO</td>  <td>BRUNO E MARRONE</td> </tr>	
+                <tr> <td>1463</td> <td>NÃO TEM PRA NINGUÉM</td>  <td>JEITO MOLEQUE</td> </tr>	
+                <tr> <td>1389</td> <td>NÃO VÁ</td>  <td>RODRIGO SANTOS</td> </tr>	
+                <tr> <td>1432</td> <td>NÃO VALEU PRA VOCÊ</td>  <td>EDUARDO COSTA</td> </tr>	
+                <tr> <td>9495</td> <td>NARIZINHO</td>  <td>LUCINHA LINS</td> </tr>	
+                <tr> <td>3479</td> <td>NASCEMOS PRA CANTAR</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>1390</td> <td>NÉ BRINQUEDO NÃO</td>  <td>MOLEJO</td> </tr>	
+                <tr> <td>1391</td> <td>NEGRO REI</td>  <td>CIDADE NEGRA</td> </tr>	
+                <tr> <td>3171</td> <td>NEGUE</td>  <td>MARIA BETHÂNIA</td> </tr>	
+                <tr> <td>3480</td> <td>NEM UM TOQUE</td>  <td>ROSANA</td> </tr>	
+                <tr> <td>1327</td> <td>NENHUMA ESPERANÇA</td>  <td>MILIONARIO E JOSE RICO</td> </tr>	
+                <tr> <td>3376</td> <td>NO COMPASSO DO CRIADOR</td>  <td>KATINGUELÊ</td> </tr>	
+                <tr> <td>3172</td> <td>NO RANCHO FUNDO</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>3583</td> <td>NOBRA VAGABUNDO</td>  <td>DANIELA MERCURY</td> </tr>	
+                <tr> <td>3173</td> <td>NOITE</td>  <td>ZIZI POSSI</td> </tr>	
+                <tr> <td>1433</td> <td>NOITE E DIA</td>  <td>LOBÃO</td> </tr>	
+                <tr> <td>3174</td> <td>NOITES DE JUNHO</td>  <td>MUSICA JUNINA</td> </tr>	
+                <tr> <td>3584</td> <td>NOS BAILES DA VIDA</td>  <td>MILTON NASCIMENTO</td> </tr>	
+                <tr> <td>3585</td> <td>NOS LENÇÓIS DESSE REGGAE</td>  <td>ZELIA DUNCAN</td> </tr>	
+                <tr> <td>3175</td> <td>NÓS VAMOS INVADIR SUA PRAIA</td>  <td>ULTRAJE A RIGOR</td> </tr>	
+                <tr> <td>9496</td> <td>NOSSA FESTA COMEÇOU</td>  <td>SUAVE E.BAGGIO</td> </tr>	
+                <tr> <td>3176</td> <td>NOSSA GENTE (AVISA LÁ)</td>  <td>BANDA CHEIRO DE AMOR</td> </tr>	
+                <tr> <td>3586</td> <td>NOSSA GUERRA SANTA</td>  <td>ARAKETU</td> </tr>	
+                <tr> <td>9497</td> <td>NOSSA HISTÓRIA DE AMOR</td>  <td>MAURICIO MATTAR</td> </tr>	
+                <tr> <td>3435</td> <td>NOSSA SENHORA DE APARECIDA</td>  <td>GIAN E GIOVANI</td> </tr>	
+                <tr> <td>3177</td> <td>NOSSO ESTRANHO AMOR</td>  <td>MARINA LIMA</td> </tr>	
+                <tr> <td>3178</td> <td>NOSSO SONHO NÃO É ILUSÃO</td>  <td>SPC (SÓ PRA CONTRARIAR)</td> </tr>	
+                <tr> <td>3179</td> <td>NOTURNO</td>  <td>FAGNER</td> </tr>	
+                <tr> <td>3180</td> <td>NUNCA</td>  <td>FAGNER</td> </tr>	
+                <tr> <td>1997</td> <td>NUNCA AMEI ALGUÉM ASSIM</td>  <td>IVETE SANGALO</td> </tr>	
+                <tr> <td>3530</td> <td>NUNCA MAIS TE MACHUCAR</td>  <td>SPC (SÓ PRA CONTRARIAR)</td> </tr>	
+                <tr> <td>3181</td> <td>NUVEM DE LÁGRIMAS</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>3531</td> <td>O AMOR VOCÊ E EU</td>  <td>SPC (SÓ PRA CONTRARIAR)</td> </tr>	
+                <tr> <td>9498</td> <td>O ASSASSINATO DO CAMARÃO</td>  <td>OS ORIGINAIS DO SAMBA</td> </tr>	
+                <tr> <td>3436</td> <td>O ASTRONAUTA DO MÁRMORE</td>  <td>NENHUM DE NOS</td> </tr>	
+                <tr> <td>9499</td> <td>O AVIÃOZINHO</td>  <td>TCHE CAMPEIRO</td> </tr>	
+                <tr> <td>3182</td> <td>O BARQUINHO</td>  <td>NARA LEÃO</td> </tr>	
+                <tr> <td>3183</td> <td>O BÊBADO E A EQUILIBRISTA</td>  <td>ELIS REGINA</td> </tr>	
+                <tr> <td>3532</td> <td>O BECO</td>  <td>PARALAMAS DO SUCESSO</td> </tr>	
+                <tr> <td>3184</td> <td>O BEM E O MAL</td>  <td>DORIVAL CAYMMI</td> </tr>	
+                <tr> <td>3185</td> <td>O BICHO</td>  <td>RICARDO CHAVES</td> </tr>	
+                <tr> <td>3186</td> <td>O BOM</td>  <td>ERASMO CARLOS</td> </tr>	
+                <tr> <td>9500</td> <td>O BONDE DO DOM</td>  <td>MARISA MONTE</td> </tr>	
+                <tr> <td>9501</td> <td>O BRASIL TA CHEIO</td>  <td>ZE HENRIQUE E GABRIEL</td> </tr>	
+                <tr> <td>3187</td> <td>O CANTO DA CIDADE</td>  <td>DANIELA MERCURY</td> </tr>	
+                <tr> <td>1392</td> <td>O CARA ERRADO</td>  <td>JOÃO NETO E FREDERICO</td> </tr>	
+                <tr> <td>4089</td> <td>O GRANDE AMOR DA MINHA VIDA</td>  <td>GIAN E GIOVANI</td> </tr>	
+                <tr> <td>9502</td> <td>O INFERNO SÃO OS OUTROS</td>  <td>TITÃS</td> </tr>	
+                <tr> <td>1414</td> <td>O MAGO DE PORNÓIS</td>  <td>VANUSA</td> </tr>	
+                <tr> <td>4381</td> <td>O MAIS BELO DOS BEIJOS</td>  <td>SANDRO E GUSTAVO</td> </tr>	
+                <tr> <td>3188</td> <td>O MELHOR VAI COMEÇAR</td>  <td>GUILHERME ARANTES</td> </tr>	
+                <tr> <td>3377</td> <td>O NOSSO AMOR A GENTE INVENTA</td>  <td>CAZUZA</td> </tr>	
+                <tr> <td>9503</td> <td>O POBRE</td>  <td>LEO JAIME</td> </tr>	
+                <tr> <td>1393</td> <td>O POVO FALA E NÓIS NAMORA</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>3336</td> <td>O PROGRESSO</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>3189</td> <td>O QUE É O QUE É</td>  <td>GONZAGUINHA</td> </tr>	
+                <tr> <td>3437</td> <td>O QUE É QUE A GENTE NÃO FAZ POR AMOR</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>3190</td> <td>O QUE É QUE EU VOU FAZER</td>  <td>GRUPO PIRRACA</td> </tr>	
+                <tr> <td>3378</td> <td>O QUE É QUE HÁ</td>  <td>FABIO JR</td> </tr>	
+                <tr> <td>3482</td> <td>O QUE EU FAÇO SEM VOCÊ</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>1434</td> <td>O QUE QUE ELA TEM QUE EU NÃO TENHO</td>  <td>AFRODITE SE QUISER</td> </tr>	
+                <tr> <td>3191</td> <td>O QUE SERÁ (A FLOR DA TERRA)</td>  <td>CHICO  BUARQUE</td> </tr>	
+                <tr> <td>3483</td> <td>O TEU CHAMEGO</td>  <td>GRUPO RAÇA</td> </tr>	
+                <tr> <td>3192</td> <td>O ÚLTIMO ROMÂNTICO</td>  <td>LULU SANTOS</td> </tr>	
+                <tr> <td>3193</td> <td>O VIRA</td>  <td>SECOS E MOLHADOS</td> </tr>	
+                <tr> <td>3194</td> <td>OCEANO</td>  <td>DJAVAN</td> </tr>	
+                <tr> <td>3195</td> <td>ÓCULOS</td>  <td>PARALAMAS DO SUCESSO</td> </tr>	
+                <tr> <td>3587</td> <td>ODARA</td>  <td>GAL COSTA</td> </tr>	
+                <tr> <td>3196</td> <td>OI (ESTOU TE AMANDO)</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>3438</td> <td>OLHA AMOR</td>  <td>GIAN E GIOVANI</td> </tr>	
+                <tr> <td>3197</td> <td>OLHAR 43</td>  <td>RPM</td> </tr>	
+                <tr> <td>3484</td> <td>OMBRO AMIGO</td>  <td>REGINALDO ROSSI</td> </tr>	
+                <tr> <td>3198</td> <td>ONDE ANDA VOCÊ</td>  <td>MARIA CREUZA</td> </tr>	
+                <tr> <td>9504</td> <td>ONDE ESTARÁ O MEU AMOR</td>  <td>MARIA BETHÂNIA</td> </tr>	
+                <tr> <td>9505</td> <td>ONDE O AMOR ME LEVA</td>  <td>ROSANA</td> </tr>	
+                <tr> <td>3337</td> <td>ONDE VOCÊ MORA ?</td>  <td>CIDADE NEGRA</td> </tr>	
+                <tr> <td>6788</td> <td>OS CEGOS DO CASTELO</td>  <td>NANDO REIS</td> </tr>	
+                <tr> <td>3338</td> <td>OS SEUS BOTÕES</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>3533</td> <td>OUT DOOR</td>  <td>SPC (SÓ PRA CONTRARIAR)</td> </tr>	
+                <tr> <td>3199</td> <td>OUTONO</td>  <td>DJAVAN</td> </tr>	
+                <tr> <td>3200</td> <td>OUTRA VEZ</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>3201</td> <td>OVELHA NEGRA</td>  <td>RITA LEE</td> </tr>	
+                <tr> <td>3379</td> <td>PACATO CIDADÃO</td>  <td>SKANK</td> </tr>	
+                <tr> <td>3588</td> <td>PÁGINA DE AMIGOS</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>3380</td> <td>PAI</td>  <td>FABIO JR</td> </tr>	
+                <tr> <td>3202</td> <td>PAI E FILHOS</td>  <td>LEGIÃO URBANA</td> </tr>	
+                <tr> <td>9506</td> <td>PAIXÃO ESQUECIDA</td>  <td>YAHOO</td> </tr>	
+                <tr> <td>1394</td> <td>PALAVRAS DO CORAÇÃO</td>  <td>BRUNA CARAM</td> </tr>	
+                <tr> <td>3589</td> <td>PANELA VELHA</td>  <td>SERGIO REIS</td> </tr>	
+                <tr> <td>3203</td> <td>PÃO DE MEL</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>9507</td> <td>PÃO DURO</td>  <td>RODRIGO SANTOS</td> </tr>	
+                <tr> <td>3204</td> <td>PAPARICO</td>  <td>MOLEJO</td> </tr>	
+                <tr> <td>3381</td> <td>PAQUEREI</td>  <td>É O TCHAN</td> </tr>	
+                <tr> <td>3205</td> <td>PARABÉNS A VOCÊ</td>  <td>PARABÉNS</td> </tr>	
+                <tr> <td>9508</td> <td>PARAÍSO PROIBIDO</td>  <td>STRIKE</td> </tr>	
+                <tr> <td>1464</td> <td>PARARÁ</td>  <td>TOMATE</td> </tr>	
+                <tr> <td>3206</td> <td>PARE O CASAMENTO</td>  <td>WANDERLEA</td> </tr>	
+                <tr> <td>3207</td> <td>PAREÇO UM MENINO</td>  <td>FABIO JR</td> </tr>	
+                <tr> <td>1435</td> <td>PÁSSARO DE FOGO</td>  <td>PAULA FERNANDES</td> </tr>	
+                <tr> <td>3339</td> <td>PAZ DO MEU AMOR</td>  <td>DANIEL</td> </tr>	
+                <tr> <td>3208</td> <td>PAZ NA CAMA</td>  <td>LEANDRO E LEONARDO</td> </tr>	
+                <tr> <td>9509</td> <td>PEÃO</td>  <td>ALMIR SATER</td> </tr>	
+                <tr> <td>3340</td> <td>PEDINDO AMOR</td>  <td>MANO A MANO</td> </tr>	
+                <tr> <td>3439</td> <td>PEDINDO BIS</td>  <td>KATINGUELÊ</td> </tr>	
+                <tr> <td>3341</td> <td>PEDRA FALSA</td>  <td>ADRYANA RIBEIRO</td> </tr>	
+                <tr> <td>3209</td> <td>PEDRO, ANTÔNIO E JOÃO</td>  <td>MUSICA JUNINA</td> </tr>	
+                <tr> <td>9510</td> <td>PEGA RAPAZ</td>  <td>RITA LEE</td> </tr>	
+                <tr> <td>9511</td> <td>PELA ÚLTIMA VEZ</td>  <td>NX ZERO</td> </tr>	
+                <tr> <td>3210</td> <td>PELADOS EM SANTOS</td>  <td>MAMONAS ASSASSINAS</td> </tr>	
+                <tr> <td>3440</td> <td>PELO INTERFONE</td>  <td>RITCHIE</td> </tr>	
+                <tr> <td>3382</td> <td>PELO MENOS UMA VEZ</td>  <td>SIMONY</td> </tr>	
+                <tr> <td>3211</td> <td>PENSAMENTO VERDE</td>  <td>MOLEJO</td> </tr>	
+                <tr> <td>3534</td> <td>PENSAMENTO</td>  <td>CIDADE NEGRA</td> </tr>	
+                <tr> <td>3212</td> <td>PENSANDO EM VOCÊ</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>1328</td> <td>PENSE EM MIM</td>  <td>BANDA CHEIRO DE AMOR</td> </tr>	
+                <tr> <td>3441</td> <td>PENSE EM MIM</td>  <td>LEANDRO E LEONARDO</td> </tr>	
+                <tr> <td>9512</td> <td>PEQUENO GRANDE AMOR</td>  <td>PAPAS DA LINGUA</td> </tr>	
+                <tr> <td>9513</td> <td>PERDENDO OS DENTES</td>  <td>PATO FU</td> </tr>	
+                <tr> <td>1023</td> <td>PERFUME</td>  <td>BELO</td> </tr>	
+                <tr> <td>3213</td> <td>PERFUME SIAMES</td>  <td>TRIO BRAVANA</td> </tr>	
+                <tr> <td>3214</td> <td>PERIGO</td>  <td>ZIZI POSSI</td> </tr>	
+                <tr> <td>9514</td> <td>PERIGOSAS PERUAS</td>  <td>FRENETICAS</td> </tr>	
+                <tr> <td>3215</td> <td>PÉTALAS</td>  <td>DJAVAN</td> </tr>	
+                <tr> <td>3535</td> <td>PIMPOLHO</td>  <td>ART POPULAR</td> </tr>	
+                <tr> <td>3216</td> <td>PINTURA ÍNTIMA</td>  <td>KID ABELHA</td> </tr>	
+                <tr> <td>3342</td> <td>PIPOCA</td>  <td>XUXA</td> </tr>	
+                <tr> <td>3217</td> <td>PLANETA ÁGUA</td>  <td>GUILHERME ARANTES</td> </tr>	
+                <tr> <td>3218</td> <td>PLANETA AZUL</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>3219</td> <td>POBRE MENINA</td>  <td>LENO E LILIAN</td> </tr>	
+                <tr> <td>1436</td> <td>PODE IR EMBORA</td>  <td>BRUNO E MARRONE</td> </tr>	
+                <tr> <td>3220</td> <td>PODEROSA</td>  <td>BANDA BRASIL</td> </tr>	
+                <tr> <td>9515</td> <td>PONTES INDESTRUÍVES</td>  <td>CHARLIE BROWN JR</td> </tr>	
+                <tr> <td>3590</td> <td>POR AMOR TE DEIXO IR</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>3442</td> <td>POR QUE FUI TE AMAR ASSIM</td>  <td>DANIEL</td> </tr>	
+                <tr> <td>9516</td> <td>POR QUE SERÁ</td>  <td>TOQUINHO E VINICIUS DE MORAES</td> </tr>	
+                <tr> <td>3536</td> <td>PORTELA NA AVENIDA</td>  <td>CLARA NUNES</td> </tr>	
+                <tr> <td>9517</td> <td>POSSO SENTIR</td>  <td>CHICLETE COM BANANA</td> </tr>	
+                <tr> <td>3221</td> <td>PRA COMEÇAR</td>  <td>MARINA LIMA</td> </tr>	
+                <tr> <td>3222</td> <td>PRA DANÇAR COM VOCÊ</td>  <td>SANDY E JUNIOR</td> </tr>	
+                <tr> <td>9518</td> <td>PRA SEMPRE</td>  <td>VERÔNICA SABINO</td> </tr>	
+                <tr> <td>1339</td> <td>PRA SER AMOR</td>  <td>RICK VALLEN</td> </tr>	
+                <tr> <td>1395</td> <td>PRAVTE AMOR</td>  <td>NILA BRANCO</td> </tr>	
+                <tr> <td>1705</td> <td>PRA VOCÊ</td>  <td>PAULA FERNANDES</td> </tr>	
+                <tr> <td>1437</td> <td>PRA VOCÊ GUARDEI O AMOR</td>  <td>NANDO REIS</td> </tr>	
+                <tr> <td>3443</td> <td>PRECISO DE VOCÊ</td>  <td>NETINHO</td> </tr>	
+                <tr> <td>1396</td> <td>PRECISO PARAR DE CHORAR</td>  <td>LATINO E BRUNO E MARRONE</td> </tr>	
+                <tr> <td>9519</td> <td>PRECISO SER AMADO</td>  <td>TIM MAIA</td> </tr>	
+                <tr> <td>3591</td> <td>PRECISO SER AMADO</td>  <td>ZEZÉ DE CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>3537</td> <td>PRECISO TER ALGUÉM</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>3383</td> <td>PREFIXO DE VERÃO</td>  <td>BAMDAMEL</td> </tr>	
+                <tr> <td>3485</td> <td>PRETA</td>  <td>BETO BARBOSA</td> </tr>	
+                <tr> <td>3343</td> <td>PRIMEIRO AMOR</td>  <td>SPC (SÓ PRA CONTRARIAR)</td> </tr>	
+                <tr> <td>3223</td> <td>PRO DIA NASCER FELIZ</td>  <td>BARÃO VERMELHO</td> </tr>	
+                <tr> <td>1415</td> <td>PRONTOS PRA AMAR</td>  <td>GUILHERME ARANTES</td> </tr>	
+                <tr> <td>3224</td> <td>PROVA DE FOGO</td>  <td>WANDERLEA</td> </tr>	
+                <tr> <td>3225</td> <td>PULA A FOGUEIRA</td>  <td>MUSICA JUNINA</td> </tr>	
+                <tr> <td>3592</td> <td>PURA EMOÇÃO</td>  <td>GRUPO RAÇA</td> </tr>	
+                <tr> <td>9520</td> <td>QUAL É ?</td>  <td>RAPAZOLLA</td> </tr>	
+                <tr> <td>3226</td> <td>QUANDO CHOVE</td>  <td>PATRICIA MARX</td> </tr>	
+                <tr> <td>3227</td> <td>QUANDO GIRA O MUNDO</td>  <td>FABIO JR</td> </tr>	
+                <tr> <td>1416</td> <td>QUANDO O AMOR ERA MEDO</td>  <td>FREJAT</td> </tr>	
+                <tr> <td>3228</td> <td>QUANDO O SOL BATER</td>  <td>LEGIÃO URBANA</td> </tr>	
+                <tr> <td>3538</td> <td>QUANDO TE VI</td>  <td>SIMONY</td> </tr>	
+                <tr> <td>1465</td> <td>QUASE NADA</td>  <td>ZECA BALEIRO</td> </tr>	
+                <tr> <td>3229</td> <td>QUASE SEM QUERER</td>  <td>LEGIÃO URBANA</td> </tr>	
+                <tr> <td>3230</td> <td>QUE PAÍS É ESTE</td>  <td>LEGIÃO URBANA</td> </tr>	
+                <tr> <td>3231</td> <td>QUE PENA</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>3232</td> <td>QUE SE CHAMA AMOR</td>  <td>SPC (SÓ PRA CONTRARIAR)</td> </tr>	
+                <tr> <td>9521</td> <td>QUE SE DANEM OS NÓS</td>  <td>ANA CAROLINA</td> </tr>	
+                <tr> <td>1366</td> <td>QUEM AMA CUIDA</td>  <td>MARIA CECILIA E RODOLFO</td> </tr>	
+                <tr> <td>1397</td> <td>QUEM DÁ MAIS</td>  <td>ANTÔNIO MARCOS</td> </tr>	
+                <tr> <td>3233</td> <td>QUEM DE NÓS</td>  <td>GRUPO PIRRACA</td> </tr>	
+                <tr> <td>3234</td> <td>QUEM É VOCÊ</td>  <td>SIMONE</td> </tr>	
+                <tr> <td>3444</td> <td>QUEM TEM PÕE</td>  <td>BLITZ</td> </tr>	
+                <tr> <td>9522</td> <td>QUEM TOME CONTA DE MIM</td>  <td>PAULA TOLLER</td> </tr>	
+                <tr> <td>1466</td> <td>QUER ME DOMINAR</td>  <td>SAMPA CREW</td> </tr>	
+                <tr> <td>3384</td> <td>QUEREM MEU SANGUE</td>  <td>CIDADE NEGRA</td> </tr>	
+                <tr> <td>3486</td> <td>QUERER É PODER</td>  <td>TRIO SONECA</td> </tr>	
+                <tr> <td>3235</td> <td>QUERO QUE VÁ TUDO PRO INFERNO</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>1711</td> <td>QUERO SIM</td>  <td>PAULA FERNANDES</td> </tr>	
+                <tr> <td>9523</td> <td>QUERO TE AMAR</td>  <td>BELO</td> </tr>	
+                <tr> <td>9524</td> <td>QUERO TE ENCONTRAR</td>  <td>JULIANA BARONI</td> </tr>	
+                <tr> <td>3445</td> <td>RAINHA DO BAILE</td>  <td>NETINHO</td> </tr>	
+                <tr> <td>9525</td> <td>RAZÃO DA MINHA VIDA</td>  <td>BELO</td> </tr>	
+                <tr> <td>9526</td> <td>REBOLANDO VEM</td>  <td>LUCYNHA CINTRA</td> </tr>	
+                <tr> <td>1398</td> <td>REBOLATION</td>  <td>PARANGOLE</td> </tr>	
+                <tr> <td>3487</td> <td>RECADO Á MINHA AMADA</td>  <td>KATINGUELÊ</td> </tr>	
+                <tr> <td>9527</td> <td>RECOMEÇAR</td>  <td>ALINE BARROS</td> </tr>	
+                <tr> <td>3488</td> <td>REFRÃO DE BOLERO</td>  <td>ENGENHEIROS DO HAWAII</td> </tr>	
+                <tr> <td>3489</td> <td>REI DO GADO</td>  <td>SÉRGIO REIS</td> </tr>	
+                <tr> <td>1399</td> <td>REINVENTAR</td>  <td>BELO</td> </tr>	
+                <tr> <td>3236</td> <td>REQUEBRA</td>  <td>OLODUM </td> </tr>	
+                <tr> <td>9528</td> <td>RETIRANTES</td>  <td>DORIVAL CAYMMI</td> </tr>	
+                <tr> <td>1740</td> <td>RELICÁRIO</td>  <td>CÁSSIA ELLER/NANDO REIS</td> </tr>	
+                <tr> <td>3385</td> <td>RIO BABILÔNIA</td>  <td>JORGE BENJOR</td> </tr>	
+                <tr> <td>1340</td> <td>RIO DE JANEIRO (ISSO É O MEU BRASIL)</td>  <td>CELIA</td> </tr>	
+                <tr> <td>3237</td> <td>RITMO DA CHUVA</td>  <td>DEMETRIUS</td> </tr>	
+                <tr> <td>3238</td> <td>ROBOCOP GAY</td>  <td>MAMONAS ASSASSINAS</td> </tr>	
+                <tr> <td>9529</td> <td>ROCK TRIBAL</td>  <td>BABADO NOVO</td> </tr>	
+                <tr> <td>1417</td> <td>RODA DA FORTUNA</td>  <td>KLEITON E KLEDIR</td> </tr>	
+                <tr> <td>3239</td> <td>ROMANCE ROSA</td>  <td>JUAN LUIS GUERRA</td> </tr>	
+                <tr> <td>3240</td> <td>ROMARIA</td>  <td>ELIS REGINA</td> </tr>	
+                <tr> <td>3241</td> <td>RONDA</td>  <td>MARIA BETHÂNIA</td> </tr>	
+                <tr> <td>3242</td> <td>RUA AUGUSTA</td>  <td>EDUARDO ARAUJO</td> </tr>	
+                <tr> <td>3243</td> <td>SABÃO CRÁ-CRÁ</td>  <td>MAMONAS ASSASSINAS</td> </tr>	
+                <tr> <td>1400</td> <td>SACO DE OURO</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>3490</td> <td>SAFADA</td>  <td>WANDO</td> </tr>	
+                <tr> <td>1467</td> <td>SAI DAQUI TRISTEZA</td>  <td>MAX VIANNA</td> </tr>	
+                <tr> <td>3244</td> <td>SAIGON</td>  <td>EMILIO SANTIAGO</td> </tr>	
+                <tr> <td>3386</td> <td>SALVA MEU CORAÇÃO</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>9530</td> <td>SAMBA DE VERÃO</td>  <td>CAETANO VELOSO</td> </tr>	
+                <tr> <td>3245</td> <td>SAMBA DO "ARNESTO"</td>  <td>DEMÔNIOS DA GAROA</td> </tr>	
+                <tr> <td>1367</td> <td>SAMBA PRA YO YO E YA YA</td>  <td>GRUPO REDENÇÃO</td> </tr>	
+                <tr> <td>3387</td> <td>SAMBA PRA MOÇAS</td>  <td>ZECA PAGODINHO</td> </tr>	
+                <tr> <td>1418</td> <td>SAMBASSIM</td>  <td>FERNANDA PORTO</td> </tr>	
+                <tr> <td>3246</td> <td>SAMPA</td>  <td>CAETANO VELOSO</td> </tr>	
+                <tr> <td>3446</td> <td>SÂNDALO DE DÃNDI</td>  <td>METRÔ</td> </tr>	
+                <tr> <td>3247</td> <td>SANTA MADRUGADA</td>  <td>CRISTINA MONTEIRO</td> </tr>	
+                <tr> <td>3344</td> <td>SÃO TANTAS COISAS</td>  <td>ROBERTA MIRANDA</td> </tr>	
+                <tr> <td>3249</td> <td>SAUDADE</td>  <td>AUGUSTO CESAR</td> </tr>	
+                <tr> <td>3250</td> <td>SAUDADE BANDIDA</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>3593</td> <td>SAUDADE DA MINHA TERRA</td>  <td>SERGIO REIS</td> </tr>	
+                <tr> <td>3398</td> <td>SAUDADE DANADA</td>  <td>SERGIO REIS</td> </tr>	
+                <tr> <td>3251</td> <td>SAUDOSA MALOCA</td>  <td>ORIGINAIS DO SAMBA</td> </tr>	
+                <tr> <td>3252</td> <td>SE...</td>  <td>DJAVAN</td> </tr>	
+                <tr> <td>1419</td> <td>SE VOCÊ JURAR</td>  <td>FUNDO DE QUINTAL</td> </tr>	
+                <tr> <td>3253</td> <td>SEGUINDO NO TREM AZUL</td>  <td>ROUPA NOVA</td> </tr>	
+                <tr> <td>1468</td> <td>SEJA BEM VINDA</td>  <td>BRUNO E MARRONE</td> </tr>	
+                <tr> <td>1368</td> <td>SEM ESSE CORAÇÃO</td>  <td>JOÃO BOSCO E VINICIUS</td> </tr>	
+                <tr> <td>3539</td> <td>SEM MEDO DE SER FELIZ</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>1369</td> <td>SEM VOCÊ</td>  <td>PAULA FERNANDES</td> </tr>	
+                <tr> <td>9531</td> <td>SEMENTE</td>  <td>ARMANDINHO</td> </tr>	
+                <tr> <td>3389</td> <td>SEMPRE SERÁ</td>  <td>ARAKETU</td> </tr>	
+                <tr> <td>3390</td> <td>SEMPRE SOU EU</td>  <td>ADRYANA RIBEIRO</td> </tr>	
+                <tr> <td>3540</td> <td>SENTIMENTAL DE MAIS</td>  <td>ALTEMAR DUTRA</td> </tr>	
+                <tr> <td>3541</td> <td>SENTINELA</td>  <td>GRUPO MALICIA</td> </tr>	
+                <tr> <td>4013</td> <td>SENSÍVEL DEMAIS</td>  <td>JORGE VERCILLO</td> </tr>	
+                <tr> <td>3254</td> <td>SERÁ</td>  <td>LEGIÃO URBANA</td> </tr>	
+                <tr> <td>3447</td> <td>SERÃO EXTRA</td>  <td>DR. SILVANA E CIA</td> </tr>	
+                <tr> <td>3255</td> <td>SEREIA</td>  <td>LULU SANTOS</td> </tr>	
+                <tr> <td>9532</td> <td>SERENATA</td>  <td>SILVIO CESAR</td> </tr>	
+                <tr> <td>1469</td> <td>SERTANEJA</td>  <td>IVAN LINS</td> </tr>	
+                <tr> <td>1470</td> <td>SETE CANTIGAS PARA VOAR</td>  <td>ELBA RAMALHO</td> </tr>	
+                <tr> <td>3491</td> <td>SEU AMOR JÁ TERMINOU</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>9533</td> <td>SEUS PASSOS</td>  <td>SKANK</td> </tr>	
+                <tr> <td>3256</td> <td>SEXY YEMANJÁ</td>  <td>PEPEU GOMES</td> </tr>	
+                <tr> <td>3257</td> <td>SINA</td>  <td>DJAVAN</td> </tr>	
+                <tr> <td>1438</td> <td>SINAIS</td>  <td>LUAN SANTANA</td> </tr>	
+                <tr> <td>9534</td> <td>SINCERAMENTE</td>  <td>CACHORRO GRANDE</td> </tr>	
+                <tr> <td>6981</td> <td>SIGNO DE AR</td>  <td>JORGE VERCILLO</td> </tr>	
+                <tr> <td>3258</td> <td>SÓ COM VOCÊ</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>9535</td> <td>SÓ DE VOCÊ</td>  <td>RITA LEE</td> </tr>	
+                <tr> <td>9536</td> <td>SÓ EU</td>  <td>CALYPSO</td> </tr>	
+                <tr> <td>1471</td> <td>SÓ FALTOU VOCÊ LADO A LADO B</td>  <td>LEANDRO SAPUCAHY</td> </tr>	
+                <tr> <td>3259</td> <td>SÓ LOUCO</td>  <td>GAL COSTA</td> </tr>	
+                <tr> <td>9537</td> <td>SÓ O FIM</td>  <td>CAMISA DE VENUS</td> </tr>	
+                <tr> <td>3542</td> <td>SÓ PEDINDO BIS</td>  <td>KATINGUELÊ</td> </tr>	
+                <tr> <td>1472</td> <td>SÓ POR UM MOMENTO</td>  <td>ALEXANDRE PIRES</td> </tr>	
+                <tr> <td>3345</td> <td>SÓ PRA TE MOSTRAR</td>  <td>DANIELA MERCURY</td> </tr>	
+                <tr> <td>3492</td> <td>SÓ VOCÊ</td>  <td>FABIO JR</td> </tr>	
+                <tr> <td>3260</td> <td>SOBRADINHO</td>  <td>SA E GUARABYRA</td> </tr>	
+                <tr> <td>9538</td> <td>SOBRE NÓS DOIS E O RESTA DO MUNDO</td>  <td>FREJAT</td> </tr>	
+                <tr> <td>3493</td> <td>SOL DE PRIMAVERA</td>  <td>BETO GUEDES</td> </tr>	
+                <tr> <td>3261</td> <td>SOMOS TODOS IGUAIS NESTA NOITE</td>  <td>IVAN LINS</td> </tr>	
+                <tr> <td>3391</td> <td>SONHO MEU</td>  <td>MARIA BETHÂNIA</td> </tr>	
+                <tr> <td>3262</td> <td>SONHO POR SONHO</td>  <td>LEANDRO E LEONARDO</td> </tr>	
+                <tr> <td>1473</td> <td>SOU MAIS UM</td>  <td>MOACYR FRANCO</td> </tr>	
+                <tr> <td>3594</td> <td>SOZINHA</td>  <td>SANDRA DE SÁ</td> </tr>	
+                <tr> <td>3494</td> <td>SOZINHO</td>  <td>CAETANO VELOSO</td> </tr>	
+                <tr> <td>9539</td> <td>SUAVE</td>  <td>PRETA GIL</td> </tr>	
+                <tr> <td>1474</td> <td>SUBLIME MIRAGEM</td>  <td>MILIONARIO E JOSE RICO</td> </tr>	
+                <tr> <td>3263</td> <td>SUFOCO</td>  <td>ALCIONE</td> </tr>	
+                <tr> <td>1475</td> <td>SUGAR</td>  <td>MARINA LIMA</td> </tr>	
+                <tr> <td>9540</td> <td>SUPER AFIM</td>  <td>CANSEI DE SER SEXY</td> </tr>	
+                <tr> <td>3264</td> <td>TÁ TUDO ERRADO</td>  <td>EMILIO SANTIAGO</td> </tr>	
+                <tr> <td>1578</td> <td>TÁ VENDO AQUELA LUA</td>  <td>EXALTASAMBA</td> </tr>	
+                <tr> <td>3265</td> <td>TALISMÃ</td>  <td>ELSON</td> </tr>	
+                <tr> <td>9541</td> <td>TALVEZ</td>  <td>MARINA ELALI</td> </tr>	
+                <tr> <td>9542</td> <td>TAMANHO NÃO É DOCUMENTO</td>  <td>EDUARDO DUSEK</td> </tr>	
+                <tr> <td>3595</td> <td>TÃO SEU</td>  <td>SKANK</td> </tr>	
+                <tr> <td>3392</td> <td>TÃO SÓ</td>  <td>SPC (SÓ PRA CONTRARIAR)</td> </tr>	
+                <tr> <td>1753</td> <td>TARDE DEMAIS</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>1329</td> <td>TARDE DEMAIS</td>  <td>CÉSAR MENOTTI E FABIANO</td> </tr>	
+                <tr> <td>3266</td> <td>TARDE EM ITAPOÃ</td>  <td>TOQUINHO E VINICIUS DE MORAES</td> </tr>	
+                <tr> <td>9543</td> <td>TATUAGEM</td>  <td>RUD E ROBSON</td> </tr>	
+                <tr> <td>3543</td> <td>TE AMAR SEM MEDO</td>  <td>SPC (SÓ PRA CONTRARIAR)</td> </tr>	
+                <tr> <td>3448</td> <td>TE AMO MENINA</td>  <td>GIAN E GIOVANI</td> </tr>	
+                <tr> <td>1341</td> <td>TE AMO TANTO</td>  <td>BRUNO E MARRONE</td> </tr>	
+                <tr> <td>9544</td> <td>TE ESPERO NO FAROL</td>  <td>RAPAZOLLA</td> </tr>	
+                <tr> <td>3495</td> <td>TE QUERO COMIGO</td>  <td>RAÇA NEGRA</td> </tr>	
+                <tr> <td>3393</td> <td>TE VER</td>  <td>SKANK</td> </tr>	
+                <tr> <td>3596</td> <td>TEATRO DOS VAMPIROS</td>  <td>LEGIÃO URBANA</td> </tr>	
+                <tr> <td>3597</td> <td>TEM COISAS QUE A GENTE NÃO TIRA DO CORAÇÃO</td>  <td>ROBERTO CARLOS</td> </tr>	
+                <tr> <td>9545</td> <td>TEMPERO</td>  <td>GRUPO RAÇA</td> </tr>	
+                <tr> <td>1370</td> <td>TEMPO DE ACORDAR</td>  <td>RONNIE VON</td> </tr>	
+                <tr> <td>9546</td> <td>TEMPO DE VENCER</td>  <td>JAMILY</td> </tr>	
+                <tr> <td>3267</td> <td>TEMPO PERDIDO</td>  <td>LEGIÃO URBANA</td> </tr>	
+                <tr> <td>3544</td> <td>TEMPORAL</td>  <td>ART POPULAR</td> </tr>	
+                <tr> <td>3449</td> <td>TEMPORAL DE AMOR</td>  <td>LEANDRO E LEONARDO</td> </tr>	
+                <tr> <td>9547</td> <td>TESOURO DA JUVENTUDE</td>  <td>LULU SANTOS</td> </tr>	
+                <tr> <td>3496</td> <td>TEU CAFUNÉ</td>  <td>MAURICIO MATTAR</td> </tr>	
+                <tr> <td>3545</td> <td>TIC TIC TAC</td>  <td>NEGRITUDE JUNIOR</td> </tr>	
+                <tr> <td>1342</td> <td>TIMIDEZ</td>  <td>VITOR E LÉO</td> </tr>	
+                <tr> <td>3268</td> <td>TIMIDEZ</td>  <td>BIQUINI CAVADÃO</td> </tr>	
+                <tr> <td>3269</td> <td>TINDOLELÊ</td>  <td>XUXA</td> </tr>	
+                <tr> <td>9548</td> <td>TIPO ZERO</td>  <td>EDSON CORDEIRO</td> </tr>	
+                <tr> <td>1476</td> <td>TIVE SIM</td>  <td>NEY MATOGROSSO</td> </tr>	
+                <tr> <td>3270</td> <td>TÔ COM SAUDADE</td>  <td>ALCIONE</td> </tr>	
+                <tr> <td>1343</td> <td>TÔ FORA</td>  <td>KELLY KEY</td> </tr>	
+                <tr> <td>3346</td> <td>TÔ LEGAL</td>  <td>GRUPO RAÇA</td> </tr>	
+                <tr> <td>1344</td> <td>TÔ MORRENDO DE SAUDADE</td>  <td>MARQUINHOS</td> </tr>	
+                <tr> <td>9549</td> <td>TÔ MORRENDO DE SAUDADE</td>  <td>CÉSAR MENOTTI E FABIANO</td> </tr>	
+                <tr> <td>9550</td> <td>TODA VEZ QUE EU DIGO ADEUS</td>  <td>CASSIA ELLER</td> </tr>	
+                <tr> <td>9551</td> <td>TODO MENINO É UM REI</td>  <td>ROBERTO RIBEIRO</td> </tr>	
+                <tr> <td>1420</td> <td>TOLA FOI VOCÊ</td>  <td>ANGELA RÔ RÔ</td> </tr>	
+                <tr> <td>20038</td> <td>TOXICITY</td>  <td>SYSTEM OF A DOWN</td> </tr>	
+                <tr> <td>3271</td> <td>TOTAL</td>  <td>NETINHO</td> </tr>	
+                <tr> <td>3394</td> <td>TOTALMENTE DEMAIS</td>  <td>HANOI HANOI</td> </tr>	
+                <tr> <td>3598</td> <td>TRAPAÇA</td>  <td>ART POPULAR</td> </tr>	
+                <tr> <td>3272</td> <td>TRAVESSIA</td>  <td>MILTON NASCIMENTO</td> </tr>	
+                <tr> <td>1346</td> <td>TRAZ DE VOLTA A MINHA VIDA</td>  <td>ENZO E RODRIGO</td> </tr>	
+                <tr> <td>3273</td> <td>TREM DAS ONZE</td>  <td>ADONIRAN BARBOSA</td> </tr>	
+                <tr> <td>3546</td> <td>TRIBUTO AOS MAMONAS</td>  <td>SPC (SÓ PRA CONTRARIAR)</td> </tr>	
+                <tr> <td>3274</td> <td>TRILHAS</td>  <td>GUILHERME ARANTES</td> </tr>	
+                <tr> <td>3275</td> <td>TRISTE</td>  <td>ELIS REGINA</td> </tr>	
+                <tr> <td>3276</td> <td>TROCANDO EM MIÚDOS</td>  <td>CHICO  BUARQUE</td> </tr>	
+                <tr> <td>3277</td> <td>TROPICANA</td>  <td>ALCEU VALENÇA</td> </tr>	
+                <tr> <td>3497</td> <td>TUDO BEM</td>  <td>LULU SANTOS</td> </tr>	
+                <tr> <td>3278</td> <td>TUDO COM VOCÊ</td>  <td>LULU SANTOS</td> </tr>	
+                <tr> <td>1345</td> <td>TUDO MENOS AMOR</td>  <td>SPC (SÓ PRA CONTRARIAR)</td> </tr>	
+                <tr> <td>1347</td> <td>TUDO NO OLHAR</td>  <td>MARCOS E BELUTTI</td> </tr>	
+                <tr> <td>3498</td> <td>TUDO PASSARÁ</td>  <td>NELSON NED</td> </tr>	
+                <tr> <td>9552</td> <td>TUDO PRO PARAGUAI</td>  <td>LINGUA DE TRAPO</td> </tr>	
+                <tr> <td>9553</td> <td>TÚNEL DO AMOR</td>  <td>CELLY CAMPELLO</td> </tr>	
+                <tr> <td>9554</td> <td>UM AUÊ COM VOCÊ</td>  <td>BABY DO BRASIL</td> </tr>	
+                <tr> <td>9555</td> <td>UM BEIJO SEU</td>  <td>WILSON SIDERAL</td> </tr>	
+                <tr> <td>3279</td> <td>UM CERTO ALGUÉM</td>  <td>LULU SANTOS</td> </tr>	
+                <tr> <td>3280</td> <td>UM DIA DE DOMINGO</td>  <td>TIM MAIA</td> </tr>	
+                <tr> <td>3347</td> <td>UM DOCE SABOR</td>  <td>KATINGUELÊ</td> </tr>	
+                <tr> <td>3450</td> <td>UM DOIS TRÊS</td>  <td>GIAN E GIOVANI</td> </tr>	
+                <tr> <td>3395</td> <td>UM HOMEM QUANDO AMA</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>3499</td> <td>UM PRO OUTRO</td>  <td>LULU SANTOS</td> </tr>	
+                <tr> <td>3348</td> <td>UMA BARATA CHAMADA KAFKA</td>  <td>INIMIGOS DO REI</td> </tr>	
+                <tr> <td>3281</td> <td>UMA BRASILEIRA</td>  <td>PARALAMAS DO SUCESSO</td> </tr>	
+                <tr> <td>3282</td> <td>UMA NOITE E MEIA</td>  <td>MARINA LIMA</td> </tr>	
+                <tr> <td>9556</td> <td>UMA VELHA CANÇÃO DE ROCK IN ROLL</td>  <td>14 BIS</td> </tr>	
+                <tr> <td>3283</td> <td>UNI, DUNI, TÊ</td>  <td>TREM DA ALEGRIA</td> </tr>	
+                <tr> <td>1439</td> <td>ÚNICO OLHAR</td>  <td>JOTA QUEST</td> </tr>	
+                <tr> <td>3284</td> <td>UNIVERSO DO TEU CORPO</td>  <td>TAIGUARA</td> </tr>	
+                <tr> <td>3349</td> <td>UTOPIA</td>  <td>ART POPULAR</td> </tr>	
+                <tr> <td>3396</td> <td>VÁ COM DEUS</td>  <td>ROBERTA MIRANDA</td> </tr>	
+                <tr> <td>3599</td> <td>VAI SACUDIR, VAI ABALAR</td>  <td>BANDA CHEIRO DE AMOR</td> </tr>	
+                <tr> <td>9557</td> <td>VAIDADE</td>  <td>LUCIANA MELLO</td> </tr>	
+                <tr> <td>1440</td> <td>VALE NIGHT</td>  <td>ASA DE AGUIA</td> </tr>	
+                <tr> <td>1477</td> <td>VALEU</td>  <td>EXALTASAMBA</td> </tr>	
+                <tr> <td>3285</td> <td>VALEU DEMAIS</td>  <td>ART POPULAR</td> </tr>	
+                <tr> <td>9558</td> <td>VAMOS FAZER FESTA</td>  <td>TCHE GAROTOS</td> </tr>	
+                <tr> <td>3600</td> <td>VAMOS FUGIR</td>  <td>GILBERTO GIL</td> </tr>	
+                <tr> <td>9559</td> <td>VARANDAS</td>  <td>ALMIR SATER</td> </tr>	
+                <tr> <td>1478</td> <td>VASO RUIM</td>  <td>CASUARINA</td> </tr>	
+                <tr> <td>9560</td> <td>VEM</td>  <td>BELO</td> </tr>	
+                <tr> <td>3286</td> <td>VEM QUENTE QUE EU ESTOU FERVENDO</td>  <td>RAUL SEIXAS</td> </tr>	
+                <tr> <td>1479</td> <td>VENDAVAL</td>  <td>FERNANDO E SOROCABA</td> </tr>	
+                <tr> <td>3397</td> <td>VENENO DA LATA</td>  <td>FERNANDA ABREU</td> </tr>	
+                <tr> <td>3287</td> <td>VENTO E VENTANIA</td>  <td>BIQUINI CAVADÃO</td> </tr>	
+                <tr> <td>3643</td> <td>VENTO NO LITORAL</td>  <td>LEGIÃO URBANA</td> </tr>	
+                <tr> <td>3500</td> <td>VERDADE CHINESA</td>  <td>EMILIO SANTIAGO</td> </tr>	
+                <tr> <td>3398</td> <td>VERDADEIRA PAIXÃO</td>  <td>GRUPO REVELAÇÃO</td> </tr>	
+                <tr> <td>3547</td> <td>VERMELHO</td>  <td>MARCIA FREIRE</td> </tr>	
+                <tr> <td>3548</td> <td>VEZ EM QUANDO VEM ME VER</td>  <td>CHITÃOZINHO E XORORÓ</td> </tr>	
+                <tr> <td>1348</td> <td>VICIEI EM VOCÊ</td>  <td>ANGELA RÔ RÔ</td> </tr>	
+                <tr> <td>3399</td> <td>VIDA BANDIDA</td>  <td>LOBÃO</td> </tr>	
+                <tr> <td>9561</td> <td>VIDA BOA</td>  <td>VICTOR E LEO</td> </tr>	
+                <tr> <td>3288</td> <td>VINTE E POUCOS ANOS</td>  <td>FABIO JR</td> </tr>	
+                <tr> <td>9562</td> <td>VIRA LATA DE RAÇA</td>  <td>NEY MATOGROSSO</td> </tr>	
+                <tr> <td>3289</td> <td>VIRA VIRA</td>  <td>MAMONAS ASSASSINAS</td> </tr>	
+                <tr> <td>3290</td> <td>VITORIOSA</td>  <td>IVAN LINS</td> </tr>	
+                <tr> <td>9563</td> <td>VIVENDO ILUSÃO</td>  <td>RADIO TAXI</td> </tr>	
+                <tr> <td>1780</td> <td>VIVER SEM TI</td>  <td>EXALTASAMBA</td> </tr>	
+                <tr> <td>1330</td> <td>VOA BEIJA FLOR</td>  <td>JORGE E MATEUS</td> </tr>	
+                <tr> <td>3291</td> <td>VOCÊ</td>  <td>EMILIO SANTIAGO</td> </tr>	
+                <tr> <td>3549</td> <td>VOCÊ ABUSOU</td>  <td>ANTÔNIO CARLOS E JOCAFI</td> </tr>	
+                <tr> <td>3292</td> <td>VOCÊ É LINDA</td>  <td>CAETANO VELOSO</td> </tr>	
+                <tr> <td>9564</td> <td>VOCÊ É O CARA</td>  <td>KELLY KEY</td> </tr>	
+                <tr> <td>3400</td> <td>VOCÊ EM MIM</td>  <td>ART POPULAR</td> </tr>	
+                <tr> <td>1349</td> <td>VOCÊ ESCOLHEU ERRADO</td>  <td>FRENETICAS</td> </tr>	
+                <tr> <td>9565</td> <td>VOCÊ ME ENSINOU O AMOR</td>  <td>NATALIA SIQUEIRA</td> </tr>	
+                <tr> <td>9566</td> <td>VOCÊ ME GANHOU DE PRESENTE</td>  <td>PAULA TOLLER</td> </tr>	
+                <tr> <td>3350</td> <td>VOCÊ NÃO ENTENDE NADA</td>  <td>DANIELA MERCURY</td> </tr>	
+                <tr> <td>1350</td> <td>VOCÊ NÃO SABE O QUE É AMOR</td>  <td>LUAN SANTANA</td> </tr>	
+                <tr> <td>3293</td> <td>VOCÊ NÃO SOUBE ME AMAR</td>  <td>BLITZ</td> </tr>	
+                <tr> <td>9567</td> <td>VOCÊ NÃO VALE NADA</td>  <td>TCHE BARBARIDADE</td> </tr>	
+                <tr> <td>9568</td> <td>VOCÊ SABE</td>  <td>BELO</td> </tr>	
+                <tr> <td>9569</td> <td>VOCÊ VAI PIRAR</td>  <td>ALEXANDRE PIRES</td> </tr>	
+                <tr> <td>3294</td> <td>VOCÊ VAI VER</td>  <td>ZEZE DI CAMARGO E LUCIANO</td> </tr>	
+                <tr> <td>3295</td> <td>VOLTA PRA ELA</td>  <td>ELIANA DE LIMA</td> </tr>	
+                <tr> <td>3550</td> <td>VOLTA PRA MIM</td>  <td>ROUPA NOVA</td> </tr>	
+                <tr> <td>9570</td> <td>VONTADE</td>  <td>PAULINHO MOSKA</td> </tr>	
+                <tr> <td>3296</td> <td>VOU FESTEJAR</td>  <td>BETH CARVALHO</td> </tr>	
+                <tr> <td>3297</td> <td>W BRASIL (CHAMA O SINDICO...)</td>  <td>JORGE BENJOR</td> </tr>	
+                <tr> <td>3298</td> <td>WAVE</td>  <td>TOM JOBIM</td> </tr>	
+                <tr> <td>3299</td> <td>WEEKEND</td>  <td>BLITZ</td> </tr>	
+                <tr> <td>3300</td> <td>WHISKY A GO GO</td>  <td>ROUPA NOVA</td> </tr>	
+                <tr> <td>1480</td> <td>ZOODSTOCK</td>  <td>INIMIGOS DO HP</td> </tr>	
+            </tbody>
+
+        </table>
+
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+
+        <p>&copy; Todos os direitos reservados</p>
+        <p id="clique-footer" onclick="redirecionarParaPagina1()">Desenvolvido por Fabio Guimarães</p>
+    
+    </footer>
+
+</body>
+
+</html>
