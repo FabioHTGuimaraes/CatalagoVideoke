@@ -5,6 +5,8 @@ body {
     font-family: "Roboto Mono", sans-serif;
     line-height: 1.6;
     padding: 0;
+    margin: 0;
+    overflow-x: hidden;
     box-sizing: border-box;
     overflow-x: hidden;
     text-align: center;
@@ -91,11 +93,10 @@ button:active {
 
 /* Tabela de músicas */
 .musicList {
-    width: 100%;
-    max-width: 900px;
+    max-width: 50%;
     margin: 0 auto;
     border-collapse: collapse;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #6e6e6e;
 }
 
 .musicList th, .musicList td {
@@ -139,38 +140,57 @@ footer p {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .search-container input[type="text"],
-    button {
-        width: 100%;
-        max-width: 100%;
-        font-size: 18px;
+
+    .search-container {
+        padding: 4%;
     }
 
-    .musicList th, .musicList td {
-        padding: 8px;
-        font-size: 14px;
+    button {
+        padding: 4%;
+        font-size: 80%;
     }
+
+    .musicList td {
+        font-size: 50%;
+        width: 100%;
+    }
+
+    #img-centro {
+        width: 70%;
+        margin-top: 5%;
+    }
+
+    footer {  
+        font-size: 50%;
+        margin: 5%;
+    }
+
 }
 
 @media (max-width: 480px) {
+    
     .search-container {
-        padding: 10px;
-    }
-
-    .search-container input[type="text"] {
-        padding: 15px;
+        padding: 4%;
     }
 
     button {
-        padding: 15px;
-        font-size: 18px;
+        padding: 4%;
+        font-size: 80%;
     }
 
-    .musicList {
-        font-size: 12px;
+    .musicList td {
+        font-size: 50%;
+        width: 100%;
     }
 
-    .musicList th, .musicList td {
-        padding: 5px;
+    #img-centro {
+        width: 70%;
+        margin-top: 5%;
     }
+
+    footer {  
+        font-size: 50%;
+        margin: 5%;
+    }
+
 }
