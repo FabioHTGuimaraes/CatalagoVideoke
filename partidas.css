@@ -44,7 +44,7 @@ nav a:hover {
     width: 20%;
 }
 
-/* Main */
+/* Corpo */
 .container {
     width: 50%;
     margin: 5% auto;
@@ -53,6 +53,7 @@ nav a:hover {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000000;
 }
 
 h1 {
