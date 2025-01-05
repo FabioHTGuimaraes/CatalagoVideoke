@@ -45,11 +45,6 @@ nav a:hover {
     width: 20%;
 }
 
-/* Main */
-main {
-    padding: 20px;
-}
-
 /* Container de pesquisa */
 .search-container {
     display: flex;
@@ -121,16 +116,16 @@ footer {
     color: #f2d037;
     display: flex;
     justify-content: space-between;
-    padding: 0.3%;  
-    bottom: 0;        
-    left: 0;          
-    width: 100%;      
-    z-index: 1000;    
-    text-align: center;
+    align-items: center;
+    padding: 10px 0; 
+    width: 100%; 
+    position: relative; 
+    bottom: 0;
 }
 
 footer p {
-    margin-right: 0.5%;
+    margin: 2%; 
+    padding: 0; 
 }
 
 #clique-footer:hover{
@@ -162,13 +157,12 @@ footer p {
 
     footer {  
         font-size: 50%;
-        margin: 5%;
     }
 
 }
 
 @media (max-width: 480px) {
-    
+
     .search-container {
         padding: 4%;
     }
@@ -190,7 +184,7 @@ footer p {
 
     footer {  
         font-size: 50%;
-        margin: 5%;
     }
 
 }
+
